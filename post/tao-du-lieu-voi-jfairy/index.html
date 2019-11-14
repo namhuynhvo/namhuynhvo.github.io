@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="A gopher who&#39;s using VIM">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="generator" content="Hugo 0.21" />
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://namhuynhvo.github.io/dist/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://namhuynhvo.github.io/index.xml" rel="alternate" type="application/rss+xml">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header class="site-header">
+            <div class="container">
+                <a href="https://namhuynhvo.github.io">
+                    <img src="https://namhuynhvo.github.io/images/main/main_logo.png" class="post-img">
+                </a>
+            </div>
+        </header>
+
+        <div id="container">
+            <div id="post-index" class="container" itemscope="" itemtype="https://schema.org/Blog">
+                <header class="post-header">
+                    <h1>#Tạo dữ liệu với JFairy</h1>
+                    <p class="post-date">
+                        <time datetime="2018-09-02">Published Sunday, Sep 02, 2018</time>
+                    </p>
+                </header>
+                <div class="post-content clearfix" itemprop="articleBody">
+
+                    <h1 class="post-color"></h1>
+
+                    <p>JFairy là một thư viện rất đơn giản để tạo ra dữ liệu thử nghiệm một cách ngẫu nhiên trông giống như những dữ liệu thực tế. Có thể xem thông tin
+                        <a style="color: #ff0000;" href="https://github.com/Devskiller/jfairy" target="_blank"><em><span style="text-decoration: none;">tại đây:</span></em></a>
+                    </p>
+
+                    <pre class="line-numbers language-markup code-toolbar"><code class=" language-java"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>dependency</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>groupId</span><span class="token punctuation">&gt;</span></span>io.codearte.jfairy<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>groupId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>artifactId</span><span class="token punctuation">&gt;</span></span>jfairy<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>artifactId</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>version</span><span class="token punctuation">&gt;</span></span>0.5.9<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>version</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>dependency</span><span class="token punctuation">&gt;</span></span></code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <p>Để tạo các dữ liệu thông tin ngẫu nhiên về người bao gồm: tên, địa chỉ, số điện thoại, tuổi, email, số hộ chiếu,...</p>
+
+                    <pre class="line-numbers language-java code-toolbar"><code class=" language-java"><span class="token comment" spellcheck="true">//first create Fairy object. By default - Locale is English</span>
+Fairy fairy <span class="token operator">=</span> Fairy<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment" spellcheck="true">//Create person object</span>
+Person person <span class="token operator">=</span> fairy<span class="token punctuation">.</span><span class="token function">person</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span><span class="token function">getFullName</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span><span class="token function">getAddress</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span><span class="token function">getAge</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span><span class="token function">getEmail</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span><span class="token function">getDateOfBirth</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span><span class="token function">getPassportNumber</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span><span class="token function">getCompanyEmail</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+person<span class="token punctuation">.</span><span class="token function">getNationalIdentityCardNumber</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <p>Tiến hành thử nghiệm với vòng lặp 3 lần, dữ liệu mỗi lần tạo ra là duy nhất và giống như dữ liệu thực.</p>
+
+                    <pre class="line-numbers language-bash code-toolbar"><code class=" language-java">Christopher Robles
+106 Stillwell Avenue APT 171
+Washington 29693
+97
+robles@yahoo.com
+1920-06-20T23:52:14.933-05:00
+wFNmlgnox
+christopher.robles@furbainc.biz
+787-29-0099
+------------------------------------------------------
+Nathaniel Barnett
+93 Tabor Court APT 249
+New York 46780
+97
+barnett@gmail.com
+1920-10-13T13:20:39.103-05:00
+1tIaHKoze
+nathaniel.barnett@nonos.eu
+059-17-1981
+------------------------------------------------------
+Aubree Mcintyre
+178 Aster Court
+Miami 61999
+91
+aubreemcintyre@yahoo.com
+1926-11-15T04:59:48.768-06:00
+C8cDSoSHH
+aubree.mcintyre@datastorecompany.biz
+151-63-1547
+------------------------------------------------------</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <p>JFairy không chỉ hỗ trợ tên tiếng Anh, mà còn hỗ trợ vài ngôn ngữ khác.</p>
+
+                    <pre class="line-numbers language-java code-toolbar"><code class=" language-java">Fairy frFairy <span class="token operator">=</span> Fairy<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>Locale<span class="token punctuation">.</span><span class="token function">forLanguageTag</span><span class="token punctuation">(</span><span class="token string">"fr"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Fairy svFairy <span class="token operator">=</span> Fairy<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>Locale<span class="token punctuation">.</span><span class="token function">forLanguageTag</span><span class="token punctuation">(</span><span class="token string">"sv"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+Fairy plFairy <span class="token operator">=</span> Fairy<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span>Locale<span class="token punctuation">.</span><span class="token function">forLanguageTag</span><span class="token punctuation">(</span><span class="token string">"pl"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <p>Với ngôn ngữ là tiếng Pháp "fr".</p>
+                    <pre class="line-numbers language-java code-toolbar"><code class=" language-java">Hector Verdier
+15284 Anglet
+52
+hectorverdier@orange.fr
+1965-08-29T19:02:27.909-05:00
+DRYDOdR9Q
+hector.verdier@olgroupeeurl.gouv.fr
+66634487-E</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <p>Ngoài ra thư viện JFairy cũng có thể tạo ra các đối tượng khác như:</p>
+
+                    <ul>
+                        <li>Thẻ tín dụng (CC, expiration dates,...)
+                            <br>
+                        </li>
+                        <li>Network (địa chỉ IP và URL ngẫu nhiên)
+                            <br>
+                        </li>
+                        <li>Company (tên, email, tên miền,...)
+                            <br>
+                        </li>
+                        <li>Date (ngày ngẫu nhiên)
+                            <br>
+                        </li>
+                        <li>Văn bản (Từ ngẫu nhiên, văn bản,...)
+                            <br>
+                        </li>
+                    </ul>
+
+                    <pre class="line-numbers language-java code-toolbar"><code class=" language-java">fairy<span class="token punctuation">.</span><span class="token function">networkProducer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">ipAddress</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+fairy<span class="token punctuation">.</span><span class="token function">textProducer</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">latinWord</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+fairy<span class="token punctuation">.</span><span class="token function">creditCard</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getVendor</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+fairy<span class="token punctuation">.</span><span class="token function">company</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getUrl</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <pre class="line-numbers language-bash code-toolbar"><code class=" language-java">12.205.88.19
+pede consequat aliquet
+Visa
+http://www.quisuc.biz</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <p>JFairy là một thư viện rất nhẹ và đơn giản. Các đối tượng trên rất là hữu ích để tạo ra các dữ liệu thử nghiệm cho các kịch bản tự động hóa thử nghiệm của bạn.</p>
+
+                    <p style="text-align: right;"><em>namhuynhvo via <a href="http://www.testautomationguru.com/selenium-webdriver-how-to-generate-test-data-using-jfairy" style="color: #ff0000; data-wpel-link="external" target="_new" rel="nofollow">Guru</a></em></p>
+
+                </div>
+                <div class="post-navigation">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="site-title-wrapper">
+                <a class="button-jump-top js-jump-top" href="#">
+                    <img src="https://namhuynhvo.github.io/images/main/main_logo.png" class="post-img-footer">
+                </a>
+            </div>
+            <p class="footer-copyright">
+                <span>&copy; 2018 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+            </p>
+            <p class="footer-copyright">
+                <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://namhuynhvo.github.io/js/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script src="https://namhuynhvo.github.io/js/jquery.fitvids.js"></script>
+    <script src="https://namhuynhvo.github.io/js/scripts.js"></script>
+</body>
+
+</html>
