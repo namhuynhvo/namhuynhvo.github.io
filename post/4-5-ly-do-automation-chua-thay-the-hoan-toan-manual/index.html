@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="A gopher who&#39;s using VIM">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="generator" content="Hugo 0.21" />
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://namhuynhvo.github.io/dist/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://namhuynhvo.github.io/index.xml" rel="alternate" type="application/rss+xml">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <header class="site-header">
+            <div class="container">
+                <a href="https://namhuynhvo.github.io">
+                    <img src="https://namhuynhvo.github.io/images/main/main_logo.png" class="post-img">
+                </a>
+            </div>
+        </header>
+        <div id="container">
+            <div id="post-index" class="container" itemscope="" itemtype="https://schema.org/Blog">
+                <header class="post-header">
+                    <h1>#5 lý do automation chưa thay thế hoàn toàn manual</h1>
+                    <p class="post-date">
+                        <time datetime="2019-12-01">Published Sunday, Dec 01, 2019</time>
+                    </p>
+                </header>
+
+                <div class="post-content clearfix" itemprop="articleBody">
+                    <h1 class="post-color"></h1>
+
+                    <p>Trong bài viết này, tôi muốn thảo luận với các bạn những vấn đề mà tôi đã gặp phải trong quá trình xây dựng team automation. Và những lý do chủ quan của tôi sau đây cho thấy rằng automation test chưa thật sự có thể hoàn toàn thay thế được manual test.
+                    </p>
+
+                    <h1 class="post-color">Kết quả kiểm tra vẫn có thể sai</h1>
+
+                    <p>Bất kỳ giải pháp hay phần mềm nào, bản thân nó có thể chứa các lỗi hoặc những lỗi xảy ra do tác động yếu tố bên ngoài cũng gây ảnh hưởng đến kết quả kiểm thử nghiệm. Có thể nói đến dữ liệu sử dụng test, điều kiện về mạng, cũng như out of date (sự lỗi thời) của các kịch bản test...
+                    </p>
+
+                    <h1 class="post-color">Không thể tự nó đi khám phá</h1>
+
+                    <p>Automation test chỉ có thể thực thi những luồng kiểm tra mà người tạo ra nó nhằm để thử nghiệm những kịch bản đã xác định trước và hiểu nó có thể làm những gì. Automation không bao giờ có thể thay thế một người thử nghiệm manual hay tự hỏi mình, điều gì sẽ xảy ra nếu tôi làm điều này? Do đó có thể sẽ kiểm thử đi lệch ra khỏi những kịch bản cụ thể. Sau đó, người kiểm thử có thể thực hiện một số chức năng khác mà người tạo ra thử nghiệm tự động thậm chí không nghĩ đến và phát hiện ra một số lỗi nếu không được chú ý.
+                    </p>
+
+                    <h1 class="post-color">Phải cần có nhiều thời gian</h1>
+
+                    <p>Dành nhiều thời gian xây dựng một framework automation để kiểm tra cho phần mềm của dự án, khi framework hoàn thành, nó không hoạt động theo cách có lợi cho dự án hoặc chiến lược thử nghiệm của công ty. Có thể đó không phải là giải pháp tốt nhất cho vấn đề của dự án. Có thể sẽ tốt hơn nếu kiểm tra bằng manual nay từ ban đầu.
+                    </p>
+
+                    <h1 class="post-color">Phải luôn được thiết kế tốt</h1>
+
+                    <p>Trong quá trình làm việc trong các dự án, tôi đã từng thấy những framework chưa thật sự là tốt, thậm chí có thể nói là rất tệ. Vì nó được xây dựng khá là sơ xài, không được thiết kế một cách bài bản hay có cấu trúc, các hàm xử lý viết khá là lung tung. Thường những framework như vậy có vòng đời rất thấp, sẽ gây tốn rất nhiều thời gian sửa chữa, cũng như công sức nếu phải thay đổi để đáp ứng những tính năng mới của phần mềm.
+                    </p>
+
+                    <h1 class="post-color">Không bao giờ có thể cho chúng tôi biết những gì là sai</h1>
+
+                    <p>Các kết quả của automation test chỉ có thể thực sự cho chúng ta biết có gì đó không đúng, nhưng không bao giờ cho chúng ta lý do tại sao sai. Khi kiểm tra một kịch bản automation bị lỗi, nó chỉ có thể nói rằng là không tìm thấy xpath (đối tượng tương tác) hoặc không thể thao tác lên chúng. Sau đó chúng ta phải kiểm tra lại với manual để xác định nguyên nhân thật sự của kịch bản bị lỗi. Do đó sẽ tốn nhiều thời gian kiểm tra hơn là thực hiện manual ngay từ ban đầu.
+                    </p>
+
+                    <p>Vì vậy theo ý kiến cá nhân của bản thân tôi thì automation test giúp tăng cường độ chính xác của việc kiểm thử, tăng độ bao phủ, làm cho việc kiểm thử mở rộng và đầy đủ. Nó còn có thể cung cấp cho tôi kết quả nhanh chóng. Nhưng nó không bao giờ có thể cho chúng ta kết quả chính xác từ những lý do chúng ta đã thấy ở trên.
+                    </p>
+
+                    <p style="text-align: right;"><em>by <a href="https://namhuynhvo.github.io/" style="color: #ff0000; data-wpel-link="external" target="_new" rel="nofollow">huynh nam</a></em></p>
+
+                    <script src="https://utteranc.es/client.js"
+                        repo="namhuynhvo/namhuynhvo.github.io"
+                        issue-term="pathname"
+                        theme="github-light"
+                        crossorigin="anonymous"
+                        async>
+                    </script>
+
+                </div>
+
+                <div class="post-navigation">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="site-title-wrapper">
+                <a class="button-jump-top js-jump-top" href="#">
+                    <img src="https://namhuynhvo.github.io/images/main/main_logo.png" class="post-img-footer">
+                </a>
+            </div>
+            <p class="footer-copyright">
+                <script id="_waudcy">var _wau = _wau || []; _wau.push(["dynamic", "2sqjowgh0z", "dcy", "666666ffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+            </p>
+            <p class="footer-copyright">
+                <span>&copy; 2018 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+            </p>
+            <p class="footer-copyright">
+                <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://namhuynhvo.github.io/js/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script src="https://namhuynhvo.github.io/js/jquery.fitvids.js"></script>
+    <script src="https://namhuynhvo.github.io/js/scripts.js"></script>
+</body>
+
+</html>
