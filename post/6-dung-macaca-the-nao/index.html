@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="A gopher who&#39;s using VIM">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="generator" content="Hugo 0.21" />
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://namhuynhvo.github.io/dist/styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://namhuynhvo.github.io/index.xml" rel="alternate" type="application/rss+xml">
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header class="site-header">
+            <div class="container">
+                <a href="https://namhuynhvo.github.io">
+                    <img src="https://namhuynhvo.github.io/images/main/main_logo.png" class="post-img">
+                </a>
+            </div>
+        </header>
+
+        <div id="container">
+            <div id="post-index" class="container" itemscope="" itemtype="https://schema.org/Blog">
+                <header class="post-header">
+                    <h1>#dùng macaca thế nào</h1>
+                    <p class="post-date">
+                        <time datetime="2020-04-10">Published Friday, Apr 10, 2020</time>
+                    </p>
+                </header>
+                <div class="post-content clearfix" itemprop="articleBody">
+
+                    <h1 class="post-color"></h1>
+
+                    <p>Chắc hẳn việc inspect một element nào đó trên mobile với Appium Desktop, theo ý kiến cá nhân tôi
+                        đây là việc làm sẽ tốn khá nhiều thời gian và nhiều khi chúng ta nhận lại một kết quả chưa được
+                        chính xác. Trong quá trình làm việc tôi có thử dùng Macaca. Theo tôi đánh giá Macaca là một công
+                        cụ tốt để kiểm tra yếu tố (inspect element) cho Android và IOS.
+                    </p>
+
+                    <h1 class="post-color">Kiến trúc</h1>
+
+                    <p>Các bạn có thể tham khảo ở đây để hiểu hơn về Macaca:</p>
+
+                    <ul>
+                        <li><a style="color: #ff0000;" href="https://macacajs.github.io/app-inspector"
+                                target="_blank"><em><span
+                                        style="text-decoration: none;">https://macacajs.github.io/app-inspector</span></em></a>
+                            <br>
+                        </li>
+                        <li><a style="color: #ff0000;" href="https://github.com/macacajs/app-inspector"
+                                target="_blank"><em><span
+                                        style="text-decoration: none;">https://github.com/macacajs/app-inspector</span></em></a>
+                            <br>
+                        </li>
+                    </ul>
+
+                    <img height="300px" width="600px" class="post-content"
+                        src="https://namhuynhvo.github.io/images/post/6/macaca-1.png" />
+
+                    <h1 class="post-color">Cài đặt Macaca</h1>
+
+                    <p>Hôm nay tôi sẽ hướng các bạn có thể dễ dàng cài đặt cho IOS. Để cài đặt app-inspector, chúng ta
+                        cần có môi trường
+                        <a style="color: #ff0000;" href="https://nodejs.org/en/" target="_blank"><em><span
+                                    style="text-decoration: none;">Node.js. </span></em></a>
+                        Và tiến hành cài đặt theo các bước sau:
+                    </p>
+
+                    <ul>
+                        <li>macaca-cli
+                        </li>
+                    </ul>
+
+                    <pre
+                        class="line-numbers language-java code-toolbar"><code class=" language-java">npm install macaca-cli -g</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <ul>
+                        <li>usbmuxd để thử nghiệm thiết bị IOS thông qua USB
+                        </li>
+                    </ul>
+
+                    <pre
+                        class="line-numbers language-java code-toolbar"><code class=" language-java">brew install usbmuxd</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <ul>
+                        <li>ideviceinstaller để cài đặt ứng dụng cho thiết bị IOS
+                        </li>
+                    </ul>
+
+                    <pre
+                        class="line-numbers language-java code-toolbar"><code class=" language-java">brew install ideviceinstaller</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <ul>
+                        <li>ios-webkit-debug-proxy để kiểm tra WebViews
+                        </li>
+                    </ul>
+
+                    <pre
+                        class="line-numbers language-java code-toolbar"><code class=" language-java">brew install ios-webkit-debug-proxy</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <ul>
+                        <li>macaca-ios driver
+                        </li>
+                    </ul>
+
+                    <pre class="line-numbers language-java code-toolbar"><code class=" language-java"># local installation
+$ npm i macaca-ios --save-dev
+# global installation
+$ npm i macaca-ios -g</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <ul>
+                        <li>app-inspector
+                        </li>
+                    </ul>
+
+                    <pre
+                        class="line-numbers language-java code-toolbar"><code class=" language-java">npm install app-inspector -g</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <ul>
+                        <li>Provisioning profile cho xctestwd
+                        </li>
+                    </ul>
+
+                    <pre
+                        class="line-numbers language-java code-toolbar"><code class=" language-java">cd /usr/local/lib/node_modules/macaca-ios/node_modules/xctestwd/XCTestWD</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <ul>
+                        <li>Mở xcode để ký tài khoản developer account
+                        </li>
+                    </ul>
+
+                    <pre
+                        class="line-numbers language-java code-toolbar"><code class=" language-java">copen -a Xcode XCTestWD.xcodeproj</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <ul>
+                        <li>Chọn apple developer account
+                        </li>
+                    </ul>
+
+                    <img height="300px" width="600px" class="post-content"
+                        src="https://namhuynhvo.github.io/images/post/6/macaca-2.png" />
+
+                    <ul>
+                        <li>Chạy tập lệnh với UDID
+                        </li>
+                    </ul>
+
+                    <pre
+                        class="line-numbers language-java code-toolbar"><code class=" language-java">xcodebuild -project XCTestWD.xcodeproj -scheme XCTestWDUITests  -destination 'platform=iOS,id=YOUR UDID' XCTESTWD_PORT=8001 clean test -allowProvisioningUpdates</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <ul>
+                        <li>Khởi động inspect app
+                        </li>
+                    </ul>
+
+                    <pre
+                        class="line-numbers language-java code-toolbar"><code class=" language-java">app-inspector -u YOUR-UDID --verbose</code><div class="toolbar"><div class="toolbar-item"></div></div></pre>
+
+                    <img height="300px" width="600px" class="post-content"
+                        src="https://namhuynhvo.github.io/images/post/6/macaca-3.png" />
+
+                    <p>Vậy đó, rất là đơn giản, hy vọng giúp ích được gì cho các bạn đã và đang phát triển automation mobile cho team mình.</p>
+
+                    <p style="text-align: right;"><em>by <a href="https://namhuynhvo.github.io/"
+                                style="color: #ff0000; data-wpel-link=" external" target="_new" rel="nofollow">huynh
+                                nam</a></em></p>
+
+                    <script src="https://utteranc.es/client.js" repo="namhuynhvo/namhuynhvo.github.io"
+                        issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+                        </script>
+                </div>
+
+                <div class="post-navigation">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="site-title-wrapper">
+                <a class="button-jump-top js-jump-top" href="#">
+                    <img src="https://namhuynhvo.github.io/images/main/main_logo.png" class="post-img-footer">
+                </a>
+            </div>
+            <p class="footer-copyright">
+                <script
+                    id="_waudcy">var _wau = _wau || []; _wau.push(["dynamic", "2sqjowgh0z", "dcy", "666666ffffff", "small"]);</script>
+                <script async src="//waust.at/d.js"></script>
+            </p>
+            <p class="footer-copyright">
+                <span>&copy; 2018 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
+            </p>
+            <p class="footer-copyright">
+                <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a
+                        href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a
+                        href="https://github.com/jbub">jbub</a></span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://namhuynhvo.github.io/js/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+    <script src="https://namhuynhvo.github.io/js/jquery.fitvids.js"></script>
+    <script src="https://namhuynhvo.github.io/js/scripts.js"></script>
+</body>
+
+</html>

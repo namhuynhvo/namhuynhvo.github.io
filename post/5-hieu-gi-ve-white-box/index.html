@@ -11,7 +11,8 @@
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://namhuynhvo.github.io/dist/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://namhuynhvo.github.io/index.xml" rel="alternate" type="application/rss+xml">
 </head>
@@ -38,23 +39,29 @@
                 <div class="post-content clearfix" itemprop="articleBody">
                     <h1 class="post-color"></h1>
 
-                    <p>Trong bài viết này tôi muốn nhắc đến một phương pháp trong kiểm thử phần mềm, đó là white box testing (kiểm thử hộp trắng). Vậy kiểm thử đó là gì và làm sao để áp dụng nó.
+                    <p>Trong bài viết này tôi muốn nhắc đến một phương pháp trong kiểm thử phần mềm, đó là white box
+                        testing (kiểm thử hộp trắng). Vậy kiểm thử đó là gì và làm sao để áp dụng nó.
                     </p>
 
                     <h1 class="post-color">White box trông nó ra sao?</h1>
 
-                    <p>Với loại thử nghiệm này điều tiên quyết của người kiểm thử là phải am hiểu ít nhất là một ngôn ngữ lập trình và mã code được sử dụng trong phát triển phần mềm. Mà thường nhiệm vụ này hay dành cho các bạn developer (người phát triển phần mềm). Tuy nhiên người kiểm thử có thể hợp tác với nhóm phát triển để giúp thiết kế các thử nghiệm trên các đoạn code của họ.
+                    <p>Với loại thử nghiệm này điều tiên quyết của người kiểm thử là phải am hiểu ít nhất là một ngôn
+                        ngữ lập trình và mã code được sử dụng trong phát triển phần mềm. Mà thường nhiệm vụ này hay dành
+                        cho các bạn developer (người phát triển phần mềm). Tuy nhiên người kiểm thử có thể hợp tác với
+                        nhóm phát triển để giúp thiết kế các thử nghiệm trên các đoạn code của họ.
                     </p>
 
                     <h1 class="post-color">Các kỹ thuật trong white box</h1>
 
                     <ul>
-                        <li>Unit tests - Giả sử trong đoạn mã code để thêm hai số với nhau. Nếu muốn kiểm tra logic trong đoạn mã, bạn phải viết một bài kiểm tra đơn vị như sau
+                        <li>Unit tests - Giả sử trong đoạn mã code để thêm hai số với nhau. Nếu muốn kiểm tra logic
+                            trong đoạn mã, bạn phải viết một bài kiểm tra đơn vị như sau
                             <br>
                         </li>
                     </ul>
-                        
-                    <img height="150px" width="100px" class="post-content" src="https://namhuynhvo.github.io/images/post/5/unit-test.png" />
+
+                    <img height="150px" width="100px" class="post-content"
+                        src="https://namhuynhvo.github.io/images/post/5/unit-test.png" />
 
                     <ul>
                         <li>Code coverage - Số lượng đoạn mã code đang thực thi trong các trường hợp kiểm thử
@@ -79,29 +86,35 @@
 
                     <h1 class="post-color">Ưu điểm của kiểm thử white box</h1>
 
-                    <p>Ưu điểm chính là kiểm thử được thiết kế ở mức chi tiết và cho phép kiểm tra tất cả các tình huống có thể xảy ra trong phần mềm.
+                    <p>Ưu điểm chính là kiểm thử được thiết kế ở mức chi tiết và cho phép kiểm tra tất cả các tình huống
+                        có thể xảy ra trong phần mềm.
                     </p>
 
                     <h1 class="post-color">Vậy nên sử dụng loại kiểm thử nào?</h1>
 
-                    <p>Kiểm thử back box cho phép kiểm tra phầm mềm từ góc độ người dùng. Bằng cách thực hiện các kịch bản bao gồm các mục đích sử dụng, điều này cho phép kiểm tra cái cách người dùng có thể tương tác với phần mềm và có thể ngăn chặn được những lỗi tìm ẩn xảy ra khi phát triển phần mềm.
+                    <p>Kiểm thử back box cho phép kiểm tra phầm mềm từ góc độ người dùng. Bằng cách thực hiện các kịch
+                        bản bao gồm các mục đích sử dụng, điều này cho phép kiểm tra cái cách người dùng có thể tương
+                        tác với phần mềm và có thể ngăn chặn được những lỗi tìm ẩn xảy ra khi phát triển phần mềm.
                     </p>
 
-                    <p>Kiểm thử white box cho phép kiểm tra hoạt động bên trong của phần mềm và kiểm tra hành trình bên trong nó. Điều này có lợi thế là tìm ra các khiếm khuyết trong logic cốt lõi của phầm mềm mà không cần sử dụng các kỹ thuật back box.
+                    <p>Kiểm thử white box cho phép kiểm tra hoạt động bên trong của phần mềm và kiểm tra hành trình bên
+                        trong nó. Điều này có lợi thế là tìm ra các khiếm khuyết trong logic cốt lõi của phầm mềm mà
+                        không cần sử dụng các kỹ thuật back box.
                     </p>
 
-                    <p>Tuy nhiên trong bài viết này tôi sẽ không phân tích kỹ thuật này hay hơn kỹ thuật kia. Lý do là mỗi kỹ thuật kiểm thử có cách sử dụng khác nhau. Nếu sử dụng kỹ thuật này bỏ qua kỹ thuật kia sẽ làm giảm phạm vi kiểm tra tổng thể cũng như là có khả năng bỏ sót một số lượng lỗi khi sản phẩm đến với người dùng.
+                    <p>Tuy nhiên trong bài viết này tôi sẽ không phân tích kỹ thuật này hay hơn kỹ thuật kia. Lý do là
+                        mỗi kỹ thuật kiểm thử có cách sử dụng khác nhau. Nếu sử dụng kỹ thuật này bỏ qua kỹ thuật kia sẽ
+                        làm giảm phạm vi kiểm tra tổng thể cũng như là có khả năng bỏ sót một số lượng lỗi khi sản phẩm
+                        đến với người dùng.
                     </p>
 
-                    <p style="text-align: right;"><em>by <a href="https://namhuynhvo.github.io/" style="color: #ff0000; data-wpel-link="external" target="_new" rel="nofollow">huynh nam</a></em></p>
+                    <p style="text-align: right;"><em>by <a href="https://namhuynhvo.github.io/"
+                                style="color: #ff0000; data-wpel-link=" external" target="_new" rel="nofollow">huynh
+                                nam</a></em></p>
 
-                    <script src="https://utteranc.es/client.js"
-                        repo="namhuynhvo/namhuynhvo.github.io"
-                        issue-term="pathname"
-                        theme="github-light"
-                        crossorigin="anonymous"
-                        async>
-                    </script>
+                    <script src="https://utteranc.es/client.js" repo="namhuynhvo/namhuynhvo.github.io"
+                        issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+                        </script>
 
                 </div>
 
@@ -119,14 +132,18 @@
                 </a>
             </div>
             <p class="footer-copyright">
-                <script id="_waudcy">var _wau = _wau || []; _wau.push(["dynamic", "2sqjowgh0z", "dcy", "666666ffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+                <script
+                    id="_waudcy">var _wau = _wau || []; _wau.push(["dynamic", "2sqjowgh0z", "dcy", "666666ffffff", "small"]);</script>
+                <script async src="//waust.at/d.js"></script>
             </p>
             <p class="footer-copyright">
                 <span>&copy; 2018 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
             </p>
             <p class="footer-copyright">
-                <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
-                <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a
+                        href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a
+                        href="https://github.com/jbub">jbub</a></span>
             </p>
         </div>
     </footer>

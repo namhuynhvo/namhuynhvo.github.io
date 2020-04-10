@@ -259,7 +259,6 @@
      font-size: 17px;
 }
  h1, h2, h3, h4, h5, h6 {
-     margin-bottom: 20px;
      text-transform: none;
 }
  h1 {
@@ -356,9 +355,6 @@
      margin-bottom: 40px;
      width: 100%;
 }
- table tbody > tr:nth-child(odd) > td, table tbody > tr:nth-child(odd) > th {
-     /*border-bottom: 1px dotted #303030;*/
-}
  table th {
      text-align: left;
 }
@@ -368,6 +364,20 @@
  table tr {
      border-bottom: 1px dotted #aeadad;
 }
+ .nameTags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: start;
+}
+ .nameTag {
+    padding: 1px 5px;
+    border-radius: 6px;
+    background-color: #607D8B;
+    color: #ffffff;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
  .toc {
      position: fixed;
      font-size: 12px;
@@ -376,7 +386,7 @@
      margin-bottom: 2rem;
 }
  ::selection {
-     background: #fff5b8;
+     background: #eee;
      color: #000;
      display: block;
 }
@@ -518,7 +528,7 @@
      font-size: 14px;
      font-weight: 600;
      line-height: 1;
-     margin: 25px 0 0;
+     margin: 15px 0 0;
 }
  .post-date a, .blog-description a {
      color: #aeadad;
@@ -624,7 +634,7 @@
 }
  .post-stub a:hover {
      background: #ffffff;
-     color: #41bce6;
+     color: #009688;
      padding: 20px 12px;
 }
  .post-stub a:hover .post-stub-tag {
@@ -653,9 +663,11 @@
  .post-stub-date {
      display: inline-block;
      font-weight: normal;
+     color: #aeadad;
+     font-size: 15px;
 }
- .post-stub-date:before {
-     content: "/ ";
+ .post-stub-date:after {
+     content: " / ";
 }
  .next-posts-link a, .previous-posts-link a {
      display: block;
@@ -725,9 +737,6 @@
      height: 265px;
      margin-top: 95px;
      overflow: auto;
-}
- .footer .site-title-wrapper {
-     /* margin: 80px auto 35px; */
 }
  .footer .site-title a:hover, .footer .button-square:hover {
      background: #121212;
