@@ -11,7 +11,8 @@
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://namhuynhvo.github.io/dist/styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://namhuynhvo.github.io/index.xml" rel="alternate" type="application/rss+xml">
 </head>
@@ -45,7 +46,17 @@
                         </li>
                     </ul>
 
-                    <p>ZRTP là giao thức an ninh dựa trên nền tảng giao thức RTP (Real Time Protocol) / SRTP (Secure RTP) được thiết kế phát triển bởi Phil Zimmermann đặc biệt cho ứng dụng VoIP ZRTP là một giao thức thỏa thuận khóa (key-agreement) giữa 2 điểm đầu cuối, các khóa này sẽ được sử dụng để mã hóa thông tin truyền giữa 2 điểm này trong cuộc gọi VoIP dựa trên RTP. ZRTP sử dụng giao thức trao đổi khóa DiffieHellman và SRTP để mã hóa dữ liệu ZRTP không cần mã bí mật chia sẽ trước hoặc giữa trên kỹ thuật mã hóa khóa công cộng mà mỗi key Diffie-Hellman được tạo riêng cho mỗi session. Bản chất của ZRTP độc lập với giao thức báo hiệu vì sử dụng RTP để trao đổi key nên ZRTP có thể được sử dụng kết hợp với nhiều giao thức VoIP (SIP, H.323, Jingle...) nếu các giao thức đó sử dụng RTP để truyền media.</p>
+                    <p>ZRTP là giao thức an ninh dựa trên nền tảng giao thức RTP (Real Time Protocol) / SRTP (Secure
+                        RTP) được thiết kế phát triển bởi Phil Zimmermann đặc biệt cho ứng dụng VoIP ZRTP là một giao
+                        thức thỏa thuận khóa (key-agreement) giữa 2
+                        điểm đầu cuối, các khóa này sẽ được sử dụng để mã hóa thông tin truyền giữa 2 điểm này trong
+                        cuộc gọi VoIP dựa trên RTP. ZRTP sử dụng giao thức trao đổi khóa DiffieHellman và SRTP để mã hóa
+                        dữ liệu ZRTP không cần mã bí mật chia
+                        sẽ trước hoặc giữa trên kỹ thuật mã hóa khóa công cộng mà mỗi key Diffie-Hellman được tạo riêng
+                        cho mỗi session. Bản chất của ZRTP độc lập với giao thức báo hiệu vì sử dụng RTP để trao đổi key
+                        nên ZRTP có thể được sử dụng kết hợp
+                        với nhiều giao thức VoIP (SIP, H.323, Jingle...) nếu các giao thức đó sử dụng RTP để truyền
+                        media.</p>
 
                     <ul>
                         <li>RTP - Real Time Protocol
@@ -53,7 +64,26 @@
                         </li>
                     </ul>
 
-                    <p>RTP (Giao thức vận chuyển thời gian thực) đặc tả một tiêu chuẩn định dạng gói tin dùng để truyền âm thanh và hình ảnh qua internet (Tiêu chuẩn RFC 1889). Nó được phát triển bởi nhóm Audio Video Transport Working và được ban hành lần đầu tiên vào năm 1996. Giao thức RTP (Realtime Transport Protocol) cung cấp các chức năng giao vận phù hợp cho các ứng dụng truyền dữ liệu mang đặc tính thời gian thực như là thoại và truyền hình tương tác. Những dịch vụ của RTP bao gồm trường chỉ thị loại tải trọng (payload identification), đánh số thứ tự các gói, điền tem thời gian (phục vụ cho cơ chế đồng bộ khi phát lại tín hiệu ở bên thu)… Thông thường các ứng dụng chay giao thức RTP ở bên trên giao thức UDP để sử dụng các dịch vụ ghép kênh (mutiplexing) và kiểm tra tổng (checksum) của dịch vụ này; cả hai giao thức RTP và UDP tạo nên một phần chức năng của giao thức tầng giao vận. Tuy nhiên RTP cũng có thể được sử dụng với những giao thức khác của tầng mạng và tầng giao vận bên dưới miễn là các giao thức này cung cấp được các dịch vụ mà RTP đòi hỏi: giao thức RTP hỗ trợ việc truyền dữ liệu tới nhiều đích sử dụng phân bố dữ liệu multicast nếu như khả năng này được tầng mạng hoạt động bên dưới nó cung cấp. Một điều cần lưu ý là bản thân RTP không cung cấp một cơ chế nào đảm bảo việc phân phát kịp thời dữ liệu tới các trạm mà nó dựa trên các dịch vụ của tầng thấp hơn để thực hiện điều này. RTP cũng không đảm bảo việc truyền các gói theo đúng thứ tự. Tuy nhiên số thứ tự trong RTP header cho phép bên thu xây dựng lại thứ tự đúng của các gói bên phát.</p>
+                    <p>RTP (Giao thức vận chuyển thời gian thực) đặc tả một tiêu chuẩn định dạng gói tin dùng để truyền
+                        âm thanh và hình ảnh qua internet (Tiêu chuẩn RFC 1889). Nó được phát triển bởi nhóm Audio Video
+                        Transport Working và được ban hành lần
+                        đầu tiên vào năm 1996. Giao thức RTP (Realtime Transport Protocol) cung cấp các chức năng giao
+                        vận phù hợp cho các ứng dụng truyền dữ liệu mang đặc tính thời gian thực như là thoại và truyền
+                        hình tương tác. Những dịch vụ của RTP
+                        bao gồm trường chỉ thị loại tải trọng (payload identification), đánh số thứ tự các gói, điền tem
+                        thời gian (phục vụ cho cơ chế đồng bộ khi phát lại tín hiệu ở bên thu)… Thông thường các ứng
+                        dụng chay giao thức RTP ở bên trên giao
+                        thức UDP để sử dụng các dịch vụ ghép kênh (mutiplexing) và kiểm tra tổng (checksum) của dịch vụ
+                        này; cả hai giao thức RTP và UDP tạo nên một phần chức năng của giao thức tầng giao vận. Tuy
+                        nhiên RTP cũng có thể được sử dụng với
+                        những giao thức khác của tầng mạng và tầng giao vận bên dưới miễn là các giao thức này cung cấp
+                        được các dịch vụ mà RTP đòi hỏi: giao thức RTP hỗ trợ việc truyền dữ liệu tới nhiều đích sử dụng
+                        phân bố dữ liệu multicast nếu như
+                        khả năng này được tầng mạng hoạt động bên dưới nó cung cấp. Một điều cần lưu ý là bản thân RTP
+                        không cung cấp một cơ chế nào đảm bảo việc phân phát kịp thời dữ liệu tới các trạm mà nó dựa
+                        trên các dịch vụ của tầng thấp hơn để thực
+                        hiện điều này. RTP cũng không đảm bảo việc truyền các gói theo đúng thứ tự. Tuy nhiên số thứ tự
+                        trong RTP header cho phép bên thu xây dựng lại thứ tự đúng của các gói bên phát.</p>
 
                     <ul>
                         <li>SRTP - Secure RTP
@@ -61,14 +91,28 @@
                         </li>
                     </ul>
 
-                    <p>SRTP (Giao thức bảo mật vận tải thời gian thực) là một mô tả sơ lược của RTP (Tiêu chuẩn RFC 3711) để cung cấp tính bảo mật, tính toàn vẹn và xác thực thông báo trong môi trường truyền thông (tiếng nói và hình ảnh). SRTP bảo đảm an toàn cho cả các gói tin RTP và các thông báo RTCP. RTCP được sử dụng trước tiên để cung cấp sự phản hồi QoS đến các điểm đầu cuối của phiên liên lạc. Các thông báo RTCP được truyền tách riêng khỏi các thông báo RTP, cho nên cả RTP và RTCP đều cần được bảo vệ trong suốt phiên liên lạc trong môi trường đa phương tiện. Bằng việc sử dụng thuật toán dẫn xuất khoá nguyên thuỷ, SRTP có khả năng tối thiểu hoá tính toán và sử dụng tài nguyên để sinh các khoá mật mã qua cơ chế quản lý khoá ngoài. Mặc dù SRTP có thể cung cấp tính bảo mật, tính toàn vẹn và xác thực đối với thông báo được truyền đi, nhưng nó không thể duy trì toàn vẹn và xác thực thông báo từ đầu cuối đến đầu cuối cho các liên lạc được truyền từ mạng IP đến mạng PSTN.</p>
+                    <p>SRTP (Giao thức bảo mật vận tải thời gian thực) là một mô tả sơ lược của RTP (Tiêu chuẩn RFC
+                        3711) để cung cấp tính bảo mật, tính toàn vẹn và xác thực thông báo trong môi trường truyền
+                        thông (tiếng nói và hình ảnh). SRTP bảo đảm an
+                        toàn cho cả các gói tin RTP và các thông báo RTCP. RTCP được sử dụng trước tiên để cung cấp sự
+                        phản hồi QoS đến các điểm đầu cuối của phiên liên lạc. Các thông báo RTCP được truyền tách riêng
+                        khỏi các thông báo RTP, cho nên cả
+                        RTP và RTCP đều cần được bảo vệ trong suốt phiên liên lạc trong môi trường đa phương tiện. Bằng
+                        việc sử dụng thuật toán dẫn xuất khoá nguyên thuỷ, SRTP có khả năng tối thiểu hoá tính toán và
+                        sử dụng tài nguyên để sinh các khoá
+                        mật mã qua cơ chế quản lý khoá ngoài. Mặc dù SRTP có thể cung cấp tính bảo mật, tính toàn vẹn và
+                        xác thực đối với thông báo được truyền đi, nhưng nó không thể duy trì toàn vẹn và xác thực thông
+                        báo từ đầu cuối đến đầu cuối cho
+                        các liên lạc được truyền từ mạng IP đến mạng PSTN.</p>
 
                     <h1 class="post-color">Định dạng bản tin ZRTP</h1>
 
                     <img class="post-content" src="https://namhuynhvo.github.io/images/post/2/dinh-dang-bang-tin.png" />
 
                     <ul>
-                        <li>Trường sequence Number (số thự tự) là một số đếm, được tăng lên khi mỗi gói ZRTP gửi đi. Số đếm này được khởi tạo là một số ngẫu nhiên.Mục đích để ước lượng gói bị mất và để phát hiện gói ZRTP đến không đúng thứ tự.
+                        <li>Trường sequence Number (số thự tự) là một số đếm, được tăng lên khi mỗi gói ZRTP gửi đi. Số
+                            đếm này được khởi tạo là một số ngẫu nhiên.Mục đích để ước lượng gói bị mất và để phát hiện
+                            gói ZRTP đến không đúng thứ tự.
                             <br>
                         </li>
                         <li>ZRTP magic Cookie là một chuỗi 32 bit dùng để nhận dạng gói ZRTP và có giá trị 0x5a525450.
@@ -77,7 +121,10 @@
                         <li>Source Indentifier là một số SSRC của luồng ZRTP để thay thế các gói ZRTP.
                             <br>
                         </li>
-                        <li>Trường ZRTP message: ZRTP sử dụng một block 8 octet (2 word) để mã hóa loại bản tin (message type). Khối 4 octet sử dụng để mã hóa hash Type (loại băm), cipher type (loại bản mã), key agreement type (loại trao đổi khóa) và authentication tag type. Các giá trị trong các khối là một chuỗi ASCII.
+                        <li>Trường ZRTP message: ZRTP sử dụng một block 8 octet (2 word) để mã hóa loại bản tin (message
+                            type). Khối 4 octet sử dụng để mã hóa hash Type (loại băm), cipher type (loại bản mã), key
+                            agreement type (loại trao đổi khóa) và authentication
+                            tag type. Các giá trị trong các khối là một chuỗi ASCII.
                             <br>
                         </li>
                         <li>Trường CRC sử dụng 32 bit CRC để phát hiện lỗi.
@@ -85,9 +132,13 @@
                         </li>
                     </ul>
 
-                    <p>Như đã trình bày ở trên, xác thực ZRTP sử dụng chuỗi xác thực ngắn SAS (short authentication string). SAS type xác đinh SAS nào bị trả lại người sử dụng, vì thế người sử dụng có thể so sánh bằng lời với đối tác qua kênh thoại. Điều này cho phép phát hiện tấn công MiTM.</p>
+                    <p>Như đã trình bày ở trên, xác thực ZRTP sử dụng chuỗi xác thực ngắn SAS (short authentication
+                        string). SAS type xác đinh SAS nào bị trả lại người sử dụng, vì thế người sử dụng có thể so sánh
+                        bằng lời với đối tác qua kênh thoại. Điều
+                        này cho phép phát hiện tấn công MiTM.</p>
 
-                    <p>Điều này cho phép phát hiện tấn công MiTM. Tất cả các điểm cuối ZRTP phải được hỗ trợ base32 và có thể hỗ trợ base256. Các kiểu SAS:</p>
+                    <p>Điều này cho phép phát hiện tấn công MiTM. Tất cả các điểm cuối ZRTP phải được hỗ trợ base32 và
+                        có thể hỗ trợ base256. Các kiểu SAS:</p>
 
                     <img class="post-content" src="https://namhuynhvo.github.io/images/post/2/cac-kieu-sas.png" />
 
@@ -95,44 +146,64 @@
                     <p>Khi ZRTP được sử dụng để thiết lập phiên SRTP, nó được phân làm 4 giai đoạn:</p>
 
                     <ul>
-                        <li>Giai đoạn khởi tạo phiên RTP: sử dụng giao thức khởi tạo phiên.Cả hai điểm cuối ZRTP bắt đầu trao đổi ZRTP bằng việc gửi một bản tin "hello" ZRTP tới điểm cuối khác. Mục đích của bản tin "hello" là để xác nhận rằng điểm cuối hỗ trợ giao thức ZRTP không và để biết được thuật toán chung giữa hai điểm cuối ZRTP.
+                        <li>Giai đoạn khởi tạo phiên RTP: sử dụng giao thức khởi tạo phiên.Cả hai điểm cuối ZRTP bắt đầu
+                            trao đổi ZRTP bằng việc gửi một bản tin "hello" ZRTP tới điểm cuối khác. Mục đích của bản
+                            tin "hello" là để xác nhận rằng điểm cuối hỗ
+                            trợ giao thức ZRTP không và để biết được thuật toán chung giữa hai điểm cuối ZRTP.
                             <br>
                         </li>
-                        <li>Giai đoạn thỏa thuận: Sau khi cả hai điểm cuối trao đổi bản tin "hello" và bản tin "helloACK", quá trình thỏa thuận khóa bắt đầu với bản tin "commit" ZRTP. ZRTP hỗ trợ một số chế độ thỏa thuận khóa bao gồm chế độ Diff-hellman và chế độ non-Diff-Hellman. Bản tin "commit" có thể được gửi ngay sau khi hoàn thành quá trình bắt tay (hello/helloACK).
+                        <li>Giai đoạn thỏa thuận: Sau khi cả hai điểm cuối trao đổi bản tin "hello" và bản tin
+                            "helloACK", quá trình thỏa thuận khóa bắt đầu với bản tin "commit" ZRTP. ZRTP hỗ trợ một số
+                            chế độ thỏa thuận khóa bao gồm chế độ Diff-hellman và
+                            chế độ non-Diff-Hellman. Bản tin "commit" có thể được gửi ngay sau khi hoàn thành quá trình
+                            bắt tay (hello/helloACK).
                             <br>
                         </li>
                         <li>Giai đoạn trao đổi khóa Diff-Hellman.
                             <br>
                         </li>
-                        <li>Giai đoạn xác thực (xác nhận quá trình trao đổi khóa thành công): xác thực ZRTP sử dụng chuỗi xác thực ngắn SAS (short authentication string). Ngoài ra, SAS có thể được xác thực bằng việc trao đổi chữ ký số (sig) qua SAS trong bản tin confirm1 hoặc confirm2:
+                        <li>Giai đoạn xác thực (xác nhận quá trình trao đổi khóa thành công): xác thực ZRTP sử dụng
+                            chuỗi xác thực ngắn SAS (short authentication string). Ngoài ra, SAS có thể được xác thực
+                            bằng việc trao đổi chữ ký số (sig) qua SAS trong
+                            bản tin confirm1 hoặc confirm2:
                             <br>
                         </li>
                     </ul>
 
-                    <img class="post-content" src="https://namhuynhvo.github.io/images/post/2/cach-thuc-hoat-dong.png" />
+                    <img class="post-content"
+                        src="https://namhuynhvo.github.io/images/post/2/cach-thuc-hoat-dong.png" />
 
                     <ul>
                         <li>Alice và Bob khởi tạo ZRTP trên cồng truyền tin media:
                             <ul>
-                                <li>Alice gửi bản tin "Hello" tới Bob trên khung F1 (bản tin này chứa phiên bản, tùy chọn và ZID của Alice), Bob gửi xác nhận bằng bản tin "helloAck" trên khung F2 (bản tin này chứa phiên bản, tùy chọn và ZID của Bob).
+                                <li>Alice gửi bản tin "Hello" tới Bob trên khung F1 (bản tin này chứa phiên bản, tùy
+                                    chọn và ZID của Alice), Bob gửi xác nhận bằng bản tin "helloAck" trên khung F2 (bản
+                                    tin này chứa phiên bản, tùy chọn và ZID của Bob).
                                 </li>
-                                <li>Hoặc Bob gửi bản tin "Hello" tới Alice trên khung F3, Alice nhận được bản tin "Hello" và gửi xác nhận bằng bản tin "helloAck" trên khung F4.
+                                <li>Hoặc Bob gửi bản tin "Hello" tới Alice trên khung F3, Alice nhận được bản tin
+                                    "Hello" và gửi xác nhận bằng bản tin "helloAck" trên khung F4.
                                 </li>
                             </ul>
                         </li>
                         <li>Xét trường hợp Bob thiết lập liên lạc với Alice:
                             <ul>
-                                <li>Bob gửi bản tin "commit" tới Alice trên khung F5 (bản tin commit chứa ZID của Bob, các tùy chọn và giá trị băm).
+                                <li>Bob gửi bản tin "commit" tới Alice trên khung F5 (bản tin commit chứa ZID của Bob,
+                                    các tùy chọn và giá trị băm).
                                 </li>
-                                <li>Alice gửi lại cho Bob bản tin "DHpart1" trên khung F6 (bản tin này chứa pvr, hàm băm bí mật chung giữa Alice và Bob).
+                                <li>Alice gửi lại cho Bob bản tin "DHpart1" trên khung F6 (bản tin này chứa pvr, hàm băm
+                                    bí mật chung giữa Alice và Bob).
                                 </li>
-                                <li>Bob gửi lại cho Alice bản tin "DHpart2" trên khung F7 (bản tin này chứa pvi, hàm băm bí mật chung giữa Alice và Bob).
+                                <li>Bob gửi lại cho Alice bản tin "DHpart2" trên khung F7 (bản tin này chứa pvi, hàm băm
+                                    bí mật chung giữa Alice và Bob).
                                 </li>
                             </ul>
                         </li>
                         <li>Alice và Bob tạo khóa phiên SRTP:
                             <ul>
-                                <li>Alice gửi cho Bob bản tin "confirm1" trên khung F8 (bản tin này chứa MAC, cờ D (disclosure), A (allow clear), V (SAS verified), E(enrollment) , sig). Bob gửi cho Bob bản tin "confirm2" trên khung F9 (bản tin này chứa MAC, cờ D, A, V, E, sig).
+                                <li>Alice gửi cho Bob bản tin "confirm1" trên khung F8 (bản tin này chứa MAC, cờ D
+                                    (disclosure), A (allow clear), V (SAS verified), E(enrollment) , sig). Bob gửi cho
+                                    Bob bản tin "confirm2" trên khung F9 (bản tin này chứa MAC,
+                                    cờ D, A, V, E, sig).
                                 </li>
                                 <li>Alice gửi lại cho Bob bản tin "conf2Ack". Quá trình SRTP bắt đầu.
                                 </li>
@@ -148,9 +219,16 @@
                         </li>
                     </ul>
 
-                    <p>Để ngăn chặn tấn công MiTM, ZRTP sử dụng chuỗi xác thực ngắn (SASShort authentication String). SAS là giá trị băm mật mã của hai giá trị công khai của thuật toán DiffHellman. SAS được tạo ra trên cả hai phía người sử dụng.</p>
+                    <p>Để ngăn chặn tấn công MiTM, ZRTP sử dụng chuỗi xác thực ngắn (SASShort authentication String).
+                        SAS là giá trị băm mật mã của hai giá trị công khai của thuật toán DiffHellman. SAS được tạo ra
+                        trên cả hai phía người sử dụng.</p>
 
-                    <p>Để thực hiện chứng thực, cả hai phía người dùng sẽ phải đọc to giá trị SAS được tính toán thông qua kết nối bằng giọng nói đã thiết lập. Nếu giá trị trên cả hai đầu cuối của kết nối voice bằng nhau nó chỉ ra các thực thể tham gia sử dụng khóa giống nhau để mã hóa. Nếu có cuộc tấn công MiTM trên kết nối voice sẽ có các khóa mật khác nhau ở hai đầu cuối nghĩa là khóa mật giữa người khởi tạo và người còn lại đã bị tấn công.</p>
+                    <p>Để thực hiện chứng thực, cả hai phía người dùng sẽ phải đọc to giá trị SAS được tính toán thông
+                        qua kết nối bằng giọng nói đã thiết lập. Nếu giá trị trên cả hai đầu cuối của kết nối voice bằng
+                        nhau nó chỉ ra các thực thể tham gia sử
+                        dụng khóa giống nhau để mã hóa. Nếu có cuộc tấn công MiTM trên kết nối voice sẽ có các khóa mật
+                        khác nhau ở hai đầu cuối nghĩa là khóa mật giữa người khởi tạo và người còn lại đã bị tấn công.
+                    </p>
 
                     <ul>
                         <li>Khóa liên tục:
@@ -158,7 +236,13 @@
                         </li>
                     </ul>
 
-                    <p>Khi tính năng "baby duck security" được sử dụng để xác thực quá trình trao đổi khóa Diff-Hellman. Tất cả người dùng tham gia vào cuộc thông tin liên lạc voice đều phải lưu lại khóa bí mật được chia sẻ mà đã sử dụng trong phiên liên lạc, khóa này sử dụng tính toán khóa chia sẻ trong phiên liên lạc tiếp theo để nhận giá trị khóa Diff-Hellman mới. Điều này nói lên rằng để tiến hành một cuộc tấn công MiTM thì kẻ tấn công phải có mặt trong tất cả các phiên họp bắt đầu từ phiên họp đầu tiên, quá trình này gây khó khăn cho kẻ tấn công.</p>
+                    <p>Khi tính năng "baby duck security" được sử dụng để xác thực quá trình trao đổi khóa Diff-Hellman.
+                        Tất cả người dùng tham gia vào cuộc thông tin liên lạc voice đều phải lưu lại khóa bí mật được
+                        chia sẻ mà đã sử dụng trong phiên liên
+                        lạc, khóa này sử dụng tính toán khóa chia sẻ trong phiên liên lạc tiếp theo để nhận giá trị khóa
+                        Diff-Hellman mới. Điều này nói lên rằng để tiến hành một cuộc tấn công MiTM thì kẻ tấn công phải
+                        có mặt trong tất cả các phiên họp
+                        bắt đầu từ phiên họp đầu tiên, quá trình này gây khó khăn cho kẻ tấn công.</p>
 
                     <ul>
                         <li>Khả năng tấn công MiTM:
@@ -166,10 +250,17 @@
                         </li>
                     </ul>
 
-                    <p>Mặc dù các biện pháp đối phó với phương pháp tấn công MiTM đã đề cập ở trên, tuy nhiên ZRTP vẫn có khẳ năng bị tấn công MiTM: kẻ tấn công vẫn có khả năng đột nhập vào đường dẫn dữ liệu bằng cách nào đó như: tấn công giả mạo ARP giữa nạn nhân Alice và SIP máy chủ Proxy.</p>
+                    <p>Mặc dù các biện pháp đối phó với phương pháp tấn công MiTM đã đề cập ở trên, tuy nhiên ZRTP vẫn
+                        có khẳ năng bị tấn công MiTM: kẻ tấn công vẫn có khả năng đột nhập vào đường dẫn dữ liệu bằng
+                        cách nào đó như: tấn công giả mạo ARP giữa
+                        nạn nhân Alice và SIP máy chủ Proxy.</p>
 
                     <h1 class="post-color">Thuật toán trao đổi khóa Diffie-Hellman</h1>
-                    <p>Phương pháp trao đổi khóa Diffie–Hellman cho phép hai bên (người, thực thể giao tiếp) thiết lập một khóa bí mật chung để mã hóa dữ liệu sử dụng trên kênh truyền thông không an toàn mà không cần có sự thỏa thuận trước về khóa bí mật giữa hai bên. Khóa bí mật tạo ra sẽ được sử dụng để mã hóa dữ liệu với phương pháp mã hóa khóa đối xứng.</p>
+                    <p>Phương pháp trao đổi khóa Diffie–Hellman cho phép hai bên (người, thực thể giao tiếp) thiết lập
+                        một khóa bí mật chung để mã hóa dữ liệu sử dụng trên kênh truyền thông không an toàn mà không
+                        cần có sự thỏa thuận trước về khóa bí mật
+                        giữa hai bên. Khóa bí mật tạo ra sẽ được sử dụng để mã hóa dữ liệu với phương pháp mã hóa khóa
+                        đối xứng.</p>
 
                     <ul>
                         <li>Mô tả thuật toán:
@@ -177,11 +268,19 @@
                         </li>
                     </ul>
 
-                    <p>Alice và Bob muốn tạo ra một khóa mật sử dụng chung để mã hóa và giải mã dữ liệu bằng một thuật toán mật mã đối xứng nào đó. Trước hết Alice và Bob thỏa thuận với nhau hai số nguyên lớn q và g (không cần giữ bí mật các số này). Sau đó Alice và Bob thực hiện như sau:
+                    <p>Alice và Bob muốn tạo ra một khóa mật sử dụng chung để mã hóa và giải mã dữ liệu bằng một thuật
+                        toán mật mã đối xứng nào đó. Trước hết Alice và Bob thỏa thuận với nhau hai số nguyên lớn q và g
+                        (không cần giữ bí mật các số này). Sau
+                        đó Alice và Bob thực hiện như sau:
 
-                        <p>+ Alice: Chọn số nguyên XA nào đó. Yêu cầu: XAAlice. Tính giá trị YA=gXAmod q, YA là khóa chung của Alice. Gửi YA cho Bob và nhận YB từ Bob. Tính KA = YBXAmod q.</p>
+                        <p>+ Alice: Chọn số nguyên XA nào đó. Yêu cầu: XAAlice. Tính giá trị YA=gXAmod q, YA là khóa
+                            chung của Alice. Gửi YA cho Bob và nhận YB từ Bob. Tính KA = YBXAmod q.</p>
 
-                        <p>+ Bob: Chọn số nguyên XB nào đó. Yêu cầu: XBBob. Tính giá trị YB=gXAmod q, YB là khóa chung của Bob. Gửi YB cho Alice và nhận YA từ Alice. Tính KB = YAXBmod q Điều đặc biệt là YBXAmod q = YAXBmod q hay KA=KB=K Do đó Alice và Bob có thể dùng K làm khóa phiên cho phiên liên lạc bằng một thuật toán mã hóa đối xứng nào đó.</p>
+                        <p>+ Bob: Chọn số nguyên XB nào đó. Yêu cầu: XBBob. Tính giá trị YB=gXAmod q, YB là khóa chung
+                            của Bob. Gửi YB cho Alice và nhận YA từ Alice. Tính KB = YAXBmod q Điều đặc biệt là YBXAmod
+                            q = YAXBmod q hay KA=KB=K Do đó Alice và Bob
+                            có thể dùng K làm khóa phiên cho phiên liên lạc bằng một thuật toán mã hóa đối xứng nào đó.
+                        </p>
 
                         <ul>
                             <li>Nhận xét:
@@ -189,41 +288,64 @@
                             </li>
                         </ul>
 
-                        <p>Việc Bob giải được khóa riêng tư của Alice, và Alice giải được khóa riêng tư của Bob phải là bài toán khó đối với cả hai. Nếu bài toán tìm khóa riêng tư của Bob không khó đối với Alice (hoặc ngược lại), thì Eve (kẻ tấn công hay hacker) chỉ cần thay thế cặp khóa riêng tư / công khai của mình, gắn khóa công khai của Bob vào khóa riêng tư của mình, tạo ra khóa bí mật chia sẻ giả, và giải ra khóa riêng tư của Bob, sau đó sử dụng nó để tìm ra khóa bí mật chia sẻ giữa Bob và Alice. Eve cũng có thể tìm cách chọn cặp khóa công khai / riêng tư nào đó giúp Eve giải được khóa riêng tư của Bob một cách dễ dàng.</p>
+                        <p>Việc Bob giải được khóa riêng tư của Alice, và Alice giải được khóa riêng tư của Bob phải là
+                            bài toán khó đối với cả hai. Nếu bài toán tìm khóa riêng tư của Bob không khó đối với Alice
+                            (hoặc ngược lại), thì Eve (kẻ tấn công hay
+                            hacker) chỉ cần thay thế cặp khóa riêng tư / công khai của mình, gắn khóa công khai của Bob
+                            vào khóa riêng tư của mình, tạo ra khóa bí mật chia sẻ giả, và giải ra khóa riêng tư của
+                            Bob, sau đó sử dụng nó để tìm ra khóa bí mật
+                            chia sẻ giữa Bob và Alice. Eve cũng có thể tìm cách chọn cặp khóa công khai / riêng tư nào
+                            đó giúp Eve giải được khóa riêng tư của Bob một cách dễ dàng.</p>
 
                         <h1 class="post-color">Kết luận</h1>
-                        <p>ZRTP là một giao thức thỏa thuận khóa (key-agreement) giữa 2 điểm cuối trong cuộc gọi VoIP dựa trên RTP. Mặc dù sử dụng thuật toán khóa công khai nhưng nó tránh được sự phức tạp của cơ sở hạ tầng khóa công khai (PKI). Trong thực tế, nó không sử dụng khóa công khai dai dẳng trong tất cả phiên liên lạc. Nó sử dụng tạm thời một khóa phiên theo thuật toán Diffie-Hellman cho phép phát hiện các cuộc tấn công (MiTM) bằng cách hiển thị một chuỗi xác thực ngắn cho người sử dụng bằng lời nói so sánh qua điện thoại, có nghĩa là khóa này sẽ bị hủy vào cuối cuộc gọi, điều này nhằm loại bỏ các yếu tố ảnh hưởng đến các cuộc gọi trong tương lai. Nhưng ngay cả khi người sử dụng không để ý tới các chuỗi xác thực ngắn, thì việc xác thực vẫn được thực hiện dựa trên hình thức khóa liên tục, nghĩa là một vài khóa được lưu trong bộ đệm và được sử dụng cho các cuộc gọi tiếp theo. Các khóa này được trộn lẫn với các cuộc gọi tiếp theo và có chức năng tương tự như các cơ quan chứng nhận để xác thực cuộc gọi VoIP. Tất cả điều này được thực hiện mà không phụ thuộc vào cơ sở hạ tầng khóa công khai (PKI), chứng nhận khóa, mô hình tin cậy, hoặc sự phức tạp trong quản lý khóa. Nó cũng không dựa trên dấu hiệu SIP cho việc quản lý khóa, trong thực tế nó không dựa trên bất kỳ máy chủ nào cả. Nó thực hiện các thỏa thuận khóa và quản lý khóa một cách hoàn toàn ngang hàng thông qua các gói RTP.</p>
+                        <p>ZRTP là một giao thức thỏa thuận khóa (key-agreement) giữa 2 điểm cuối trong cuộc gọi VoIP
+                            dựa trên RTP. Mặc dù sử dụng thuật toán khóa công khai nhưng nó tránh được sự phức tạp của
+                            cơ sở hạ tầng khóa công khai (PKI). Trong thực
+                            tế, nó không sử dụng khóa công khai dai dẳng trong tất cả phiên liên lạc. Nó sử dụng tạm
+                            thời một khóa phiên theo thuật toán Diffie-Hellman cho phép phát hiện các cuộc tấn công
+                            (MiTM) bằng cách hiển thị một chuỗi xác thực ngắn
+                            cho người sử dụng bằng lời nói so sánh qua điện thoại, có nghĩa là khóa này sẽ bị hủy vào
+                            cuối cuộc gọi, điều này nhằm loại bỏ các yếu tố ảnh hưởng đến các cuộc gọi trong tương lai.
+                            Nhưng ngay cả khi người sử dụng không để
+                            ý tới các chuỗi xác thực ngắn, thì việc xác thực vẫn được thực hiện dựa trên hình thức khóa
+                            liên tục, nghĩa là một vài khóa được lưu trong bộ đệm và được sử dụng cho các cuộc gọi tiếp
+                            theo. Các khóa này được trộn lẫn với các
+                            cuộc gọi tiếp theo và có chức năng tương tự như các cơ quan chứng nhận để xác thực cuộc gọi
+                            VoIP. Tất cả điều này được thực hiện mà không phụ thuộc vào cơ sở hạ tầng khóa công khai
+                            (PKI), chứng nhận khóa, mô hình tin cậy, hoặc
+                            sự phức tạp trong quản lý khóa. Nó cũng không dựa trên dấu hiệu SIP cho việc quản lý khóa,
+                            trong thực tế nó không dựa trên bất kỳ máy chủ nào cả. Nó thực hiện các thỏa thuận khóa và
+                            quản lý khóa một cách hoàn toàn ngang hàng
+                            thông qua các gói RTP.</p>
 
                         <p><em>Chữ viết tắt:<em></p>
-                    <ul>
-                        <li><em>ZRTP: Zimmerman Real-Time Transport
-                            </em>
+                        <ul>
+                            <li><em>ZRTP: Zimmerman Real-Time Transport
+                                </em>
                             </li>
                             <li><em>SRTP: Secure Real-Time Transport
-                            </em>
+                                </em>
                             </li>
                             <li><em>SAS: Short Authentication String
-                            </em>
+                                </em>
                             </li>
                             <li><em>PKI: Public Key Infrastructure
-                            </em>
+                                </em>
                             </li>
                             <li><em>MiTM: Man In The Middle Attack
-                            </em>
+                                </em>
                             </li>
-                            </ul>
+                        </ul>
 
-                            <p style="text-align: right;"><em>huynh nam by <a href="https://www.rfc-editor.org/info/rfc6189" style="color: #ff0000; data-wpel-link="external" target="_new" rel="nofollow">P. Zimmermann
-                      A. Johnston, Ed.
-                      J. Callas</a></em></p>
+                        <p style="text-align: right;"><em>huynh nam by <a href="https://www.rfc-editor.org/info/rfc6189"
+                                    style="color: #ff0000; data-wpel-link=" external" target="_new" rel="nofollow">P.
+                                    Zimmermann
+                                    A. Johnston, Ed.
+                                    J. Callas</a></em></p>
 
-                      <script src="https://utteranc.es/client.js"
-                            repo="namhuynhvo/namhuynhvo.github.io"
-                            issue-term="pathname"
-                            theme="github-light"
-                            crossorigin="anonymous"
-                            async>
-                    </script>
+                        <script src="https://utteranc.es/client.js" repo="namhuynhvo/namhuynhvo.github.io"
+                            issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
+                        </script>
 
                 </div>
                 <div class="post-navigation">
@@ -240,14 +362,22 @@
                 </a>
             </div>
             <p class="footer-copyright">
-                <script id="_waudcy">var _wau = _wau || []; _wau.push(["dynamic", "2sqjowgh0z", "dcy", "666666ffffff", "small"]);</script><script async src="//waust.at/d.js"></script>
+                <!-- Whos.Amung.Us -->
+                <script id="_waudcy">
+                    var _wau = _wau || [];
+                    _wau.push(["dynamic", "2sqjowgh0z", "dcy", "666666ffffff", "small"]);
+                </script>
+                <script async src="//waust.at/d.js"></script>
+                <!-- Whos.Amung.Us -->
             </p>
             <p class="footer-copyright">
                 <span>&copy; 2018 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
             </p>
             <p class="footer-copyright">
-                <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
-                <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a href="https://github.com/jbub">jbub</a></span>
+                <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a
+                        href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
+                <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a
+                        href="https://github.com/jbub">jbub</a></span>
             </p>
         </div>
     </footer>

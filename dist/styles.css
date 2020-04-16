@@ -373,10 +373,11 @@
  .nameTag {
     padding: 1px 5px;
     border-radius: 6px;
-    background-color: #607D8B;
+    background-color: #26C6DA;
     color: #ffffff;
     font-size: 0.8em;
-    margin-right: 5px;
+    margin-right: 1px;
+    display: inline-block;
 }
  .toc {
      position: fixed;
@@ -446,7 +447,7 @@
      padding: 3px 8px 5px;
 }
  .button-square:hover {
-     background: #41bce6;
+     background: #027167;
 }
  .error {
      text-align: center;
@@ -524,9 +525,9 @@
      margin: 15px 40px;
 }
  .post-date, .blog-description {
-     color: #aeadad;
+     color: #9E9E9E;
      font-size: 14px;
-     font-weight: 600;
+     font-weight: bold;
      line-height: 1;
      margin: 15px 0 0;
 }
@@ -634,7 +635,7 @@
 }
  .post-stub a:hover {
      background: #ffffff;
-     color: #009688;
+     color: #027167;
      padding: 20px 12px;
 }
  .post-stub a:hover .post-stub-tag {
@@ -663,11 +664,15 @@
  .post-stub-date {
      display: inline-block;
      font-weight: normal;
-     color: #aeadad;
-     font-size: 15px;
+     color: #607D8B;
+     font-size: 14px;
+     font-weight: bold;
 }
- .post-stub-date:after {
-     content: " / ";
+ .post-stub-date::before {
+     content: "/ ";
+}
+ .post-stub-date::after {
+    content: " /";
 }
  .next-posts-link a, .previous-posts-link a {
      display: block;
