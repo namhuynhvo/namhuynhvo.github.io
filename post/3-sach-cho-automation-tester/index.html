@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 
 <head>
     <meta charset="utf-8">
@@ -10,31 +10,66 @@
     <meta name="generator" content="Hugo 0.21" />
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://namhuynhvo.github.io/dist/styles.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://namhuynhvo.github.io/index.xml" rel="alternate" type="application/rss+xml">
+    <link rel="stylesheet" href="../../dist/styles.css">
+    <link href="../../index.xml" rel="alternate" type="application/rss+xml">
 </head>
 
-<body>
+<body class="post-page">
+    <div class="home-top-rule"></div>
 
     <div id="wrapper">
 
-        <header class="site-header">
-            <div class="container">
-                <a href="https://namhuynhvo.github.io">
-                    <img src="https://namhuynhvo.github.io/images/main/main_logo.png" class="post-img">
+        <header class="site-header post-site-header">
+            <div class="container post-nav">
+                <a class="brand post-brand" href="../../" aria-label="Trang chủ Nam V." data-i18n-aria-label="brand.home">
+                    <span class="brand-mark">
+                        <img src="../../images/main/nam-v-logo.png" alt="" aria-hidden="true">
+                    </span>
+                    <span class="brand-name">Nam V.</span>
                 </a>
+
+                <nav class="nav-links post-nav-links" aria-label="Điều hướng chính" data-i18n-aria-label="nav.label">
+                    <a class="nav-link active" href="../../#posts" data-i18n="nav.posts">Bài viết</a>
+                    <a class="nav-link" href="../../pages/about/" data-i18n="nav.about">Giới thiệu</a>
+                    <div class="nav-actions" aria-label="Tùy chọn hiển thị" data-i18n-aria-label="nav.options">
+                        <div class="segmented-control language-control" role="group" aria-label="Ngôn ngữ" data-i18n-aria-label="language.group">
+                            <button class="segment-button" type="button" data-language-option="vi" aria-label="Tiếng Việt">VI</button>
+                            <button class="segment-button" type="button" data-language-option="en" aria-label="English">EN</button>
+                        </div>
+                        <div class="segmented-control theme-control" role="group" aria-label="Giao diện" data-i18n-aria-label="theme.group">
+                            <button class="segment-button icon-segment" type="button" data-theme-option="light" aria-label="Chuyển sang giao diện sáng">
+                                <svg aria-hidden="true" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="4"></circle>
+                                    <path d="M12 2v2"></path>
+                                    <path d="M12 20v2"></path>
+                                    <path d="m4.93 4.93 1.41 1.41"></path>
+                                    <path d="m17.66 17.66 1.41 1.41"></path>
+                                    <path d="M2 12h2"></path>
+                                    <path d="M20 12h2"></path>
+                                    <path d="m6.34 17.66-1.41 1.41"></path>
+                                    <path d="m19.07 4.93-1.41 1.41"></path>
+                                </svg>
+                                <span class="sr-only" data-i18n="theme.light">Sáng</span>
+                            </button>
+                            <button class="segment-button icon-segment" type="button" data-theme-option="dark" aria-label="Chuyển sang giao diện tối">
+                                <svg aria-hidden="true" viewBox="0 0 24 24">
+                                    <path d="M20 14.2A7.7 7.7 0 0 1 9.8 4a8 8 0 1 0 10.2 10.2Z"></path>
+                                </svg>
+                                <span class="sr-only" data-i18n="theme.dark">Tối</span>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </header>
 
         <div id="container">
             <div id="post-index" class="container" itemscope="" itemtype="https://schema.org/Blog">
+                <a class="back-link" href="../../#posts" data-i18n="post.back">← Tất cả bài viết</a>
                 <header class="post-header">
-                    <h1>#sách cho automation tester</h1>
+                    <h1 data-i18n="post.books.title">Sách cho automation tester</h1>
                     <p class="post-date">
-                        <time datetime="2018-09-17">Published Monday, Sep 17, 2018</time>
+                        <time datetime="2018-09-17" data-i18n="post.books.date">Đăng ngày 17/09/2018</time>
                     </p>
                 </header>
                 <div class="post-content clearfix" itemprop="articleBody">
@@ -103,10 +138,6 @@
                     <img height="300px" width="200px" class="post-content"
                         src="https://namhuynhvo.github.io/images/post/3/mastering-mobile-test-automation.png" />
 
-                    <p style="text-align: right;"><em>by <a href="https://namhuynhvo.github.io/"
-                                style="color: #ff0000; data-wpel-link=" external" target="_new" rel="nofollow">huynh
-                                nam</a></em></p>
-
                     <script src="https://utteranc.es/client.js" repo="namhuynhvo/namhuynhvo.github.io"
                         issue-term="pathname" theme="github-light" crossorigin="anonymous" async>
                     </script>
@@ -114,42 +145,41 @@
                 </div>
                 <div class="post-navigation">
                 </div>
+
+                <section class="post-subscribe-section" aria-labelledby="post-subscribe-title">
+                    <div class="subscribe-card">
+                        <div class="subscribe-copy">
+                            <h2 id="post-subscribe-title" data-i18n="subscribe.detailTitle">Thích bài này?</h2>
+                            <p data-i18n="subscribe.detailCopy">Nhận bài mới qua email, mỗi khi có bài mới.</p>
+                            <form class="subscribe-form" action="mailto:namhuynhvo@gmail.com" method="post" enctype="text/plain">
+                                <label for="post-subscribe-email" data-i18n="subscribe.label">Email của bạn</label>
+                                <div class="subscribe-row">
+                                    <input id="post-subscribe-email" name="email" type="email" placeholder="you@email.com" data-i18n-placeholder="subscribe.placeholder">
+                                    <button type="submit" data-i18n="subscribe.button">Đăng ký</button>
+                                </div>
+                            </form>
+                        </div>
+                        <span class="subscribe-shape" aria-hidden="true"></span>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="site-title-wrapper">
-                <a class="button-jump-top js-jump-top" href="#">
-                    <img src="https://namhuynhvo.github.io/images/main/main_logo.png" class="post-img-footer">
-                </a>
-            </div>
-            <p class="footer-copyright">
-                <!-- Whos.Amung.Us -->
-                <script id="_waudcy">
-                    var _wau = _wau || [];
-                    _wau.push(["dynamic", "2sqjowgh0z", "dcy", "666666ffffff", "small"]);
-                </script>
-                <script async src="//waust.at/d.js"></script>
-                <!-- Whos.Amung.Us -->
-            </p>
-            <p class="footer-copyright">
-                <span>&copy; 2018 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
-            </p>
-            <p class="footer-copyright">
-                <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a
-                        href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
-                <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a
-                        href="https://github.com/jbub">jbub</a></span>
-            </p>
+    <footer class="footer post-footer-shell">
+        <div class="container post-footer-inner">
+            <p class="footer-copyright"><span>&copy; 2026 Nam V.</span></p>
+            <nav aria-label="Liên kết phụ" data-i18n-aria-label="footer.label">
+                <a href="https://www.linkedin.com/in/namhuynhvo/">LinkedIn</a>
+                <a href="https://github.com/namhuynhvo">GitHub</a>
+            </nav>
         </div>
     </footer>
 
-    <script src="https://namhuynhvo.github.io/js/jquery-1.11.3.min.js"></script>
+    <script src="../../js/jquery-1.11.3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-    <script src="https://namhuynhvo.github.io/js/jquery.fitvids.js"></script>
-    <script src="https://namhuynhvo.github.io/js/scripts.js"></script>
+    <script src="../../js/jquery.fitvids.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/post-i18n.js"></script>
 </body>
 
 </html>

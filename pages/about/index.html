@@ -1,101 +1,322 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="description" content="A gopher who&#39;s using VIM">
+    <meta name="description" content="Giới thiệu về Nam V. và blog ghi chép về kiểm thử, automation và công nghệ.">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-    <meta name="generator" content="Hugo 0.21" />
+    <meta name="generator" content="Hugo 0.21">
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://namhuynhvo.github.io/dist/styles.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin,cyrillic-ext,latin-ext,cyrillic">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://namhuynhvo.github.io/index.xml" rel="alternate" type="application/rss+xml">
+    <title>Giới thiệu - Nam V.</title>
+    <link rel="stylesheet" href="../../dist/styles.css">
+    <link href="../../index.xml" rel="alternate" type="application/rss+xml">
 </head>
 
-<body>
+<body class="home-page about-page">
+    <div class="home-top-rule"></div>
 
-    <div id="wrapper">
+    <header class="home-header">
+        <div class="home-shell home-nav">
+            <a class="brand" href="../../" aria-label="Trang chủ Nam V." data-i18n-aria-label="brand.home">
+                <span class="brand-mark">
+                    <img src="../../images/main/nam-v-logo.png" alt="" aria-hidden="true">
+                </span>
+                <span class="brand-name">Nam V.</span>
+            </a>
 
-        <header class="site-header">
-            <div class="container">
-                <a href="https://namhuynhvo.github.io">
-                    <img src="https://namhuynhvo.github.io/images/main/main_logo.png" class="post-img">
-                </a>
-                <div class="site-title-wrapper">
-
-                    <a class="button-square button-social hint--top" data-hint="Linkedin" title="Linkedin"
-                        href="https://www.linkedin.com/in/namhuynhvo/">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-
-                    <a class="button-square button-social hint--top" data-hint="About Me" title="About Me"
-                        href="https://namhuynhvo.github.io/pages/about/">
-                        <i class="fa fa-address-card"></i>
-                    </a>
-
+            <nav class="nav-links" aria-label="Điều hướng chính" data-i18n-aria-label="nav.label">
+                <a class="nav-link" href="../../#posts" data-i18n="nav.posts">Bài viết</a>
+                <a class="nav-link active" href="./" data-i18n="nav.about">Giới thiệu</a>
+                <div class="nav-actions" aria-label="Tùy chọn hiển thị" data-i18n-aria-label="nav.options">
+                    <div class="segmented-control language-control" role="group" aria-label="Ngôn ngữ" data-i18n-aria-label="language.group">
+                        <button class="segment-button" type="button" data-language-option="vi" aria-label="Tiếng Việt">VI</button>
+                        <button class="segment-button" type="button" data-language-option="en" aria-label="English">EN</button>
+                    </div>
+                    <div class="segmented-control theme-control" role="group" aria-label="Giao diện" data-i18n-aria-label="theme.group">
+                        <button class="segment-button icon-segment" type="button" data-theme-option="light" aria-label="Chuyển sang giao diện sáng">
+                            <svg aria-hidden="true" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="4"></circle>
+                                <path d="M12 2v2"></path>
+                                <path d="M12 20v2"></path>
+                                <path d="m4.93 4.93 1.41 1.41"></path>
+                                <path d="m17.66 17.66 1.41 1.41"></path>
+                                <path d="M2 12h2"></path>
+                                <path d="M20 12h2"></path>
+                                <path d="m6.34 17.66-1.41 1.41"></path>
+                                <path d="m19.07 4.93-1.41 1.41"></path>
+                            </svg>
+                            <span class="sr-only" data-i18n="theme.light">Sáng</span>
+                        </button>
+                        <button class="segment-button icon-segment" type="button" data-theme-option="dark" aria-label="Chuyển sang giao diện tối">
+                            <svg aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M20 14.2A7.7 7.7 0 0 1 9.8 4a8 8 0 1 0 10.2 10.2Z"></path>
+                            </svg>
+                            <span class="sr-only" data-i18n="theme.dark">Tối</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-        </header>
-
-        <div id="container">
-            <div id="post-index" class="container" itemscope="" itemtype="https://schema.org/Blog">
-                <header class="post-header">
-                    <h1>#about me</h1>
-                </header>
-                <div class="post-content clearfix">
-
-                    <h1 class="post-color"></h1>
-
-                    <center>
-                        <p>Tôi là một kỹ sư đảm bảo chất lượng phần mềm tự động, tôi thích tìm tòi cũng như chia sẽ
-                            những thứ hay ho mà tôi biết cho những bạn khác cùng nhau học hỏi. Đừng ngần ngại, nếu có
-                            đóng góp ý kiến về bài viết hãy mạnh dạng cho tôi
-                            biết: <em style="color: #ff0000;">namhuynhvo@gmail.com</em>
-                        </p>
-                    </center>
-
-                </div>
-            </div>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="site-title-wrapper">
-                <a class="button-jump-top js-jump-top" href="#">
-                    <img src="https://namhuynhvo.github.io/images/main/main_logo.png" class="post-img-footer">
-                </a>
+    <main class="about-main">
+        <section class="home-shell about-hero" aria-labelledby="about-title">
+            <div class="about-hero-copy">
+                <p class="about-kicker" data-i18n="about.kicker">Xin chào, mình là Nam</p>
+                <h1 id="about-title" data-i18n-html="about.title">Mình viết công cụ để <mark>bắt lỗi</mark> trước khi người dùng kịp gặp.</h1>
+                <p class="about-intro" data-i18n="about.intro">Mình là SDET (Software Development Engineer in Test). Blog này là nơi mình ghi lại những gì học được trên đường làm nghề: có cái đúng, có cái sai, và có những thứ hay ho tình cờ tìm ra.</p>
+                <div class="about-actions">
+                    <a class="about-button about-button-primary" href="../../#posts" data-i18n="about.readBlog">Đọc blog</a>
+                    <a class="about-button about-button-secondary" href="mailto:namhuynhvo@gmail.com" data-i18n="about.emailMe">Gửi email cho mình</a>
+                </div>
             </div>
-            <p class="footer-copyright">
-                <!-- Whos.Amung.Us -->
-                <script id="_waudcy">
-                    var _wau = _wau || [];
-                    _wau.push(["dynamic", "2sqjowgh0z", "dcy", "666666ffffff", "small"]);
-                </script>
-                <script async src="//waust.at/d.js"></script>
-                <!-- Whos.Amung.Us -->
-            </p>
-            <p class="footer-copyright">
-                <span>&copy; 2018 / Powered by <a href="https://gohugo.io/">Hugo</a></span>
-            </p>
-            <p class="footer-copyright">
-                <span><a href="https://github.com/roryg/ghostwriter">Ghostwriter theme</a> By <a
-                        href="http://jollygoodthemes.com">JollyGoodThemes</a></span>
-                <span>/ <a href="https://github.com/jbub/ghostwriter">Ported</a> to Hugo By <a
-                        href="https://github.com/jbub">jbub</a></span>
-            </p>
+            <div class="about-portrait" aria-hidden="true">
+                <span class="about-orb about-orb-sun"></span>
+                <span class="about-orb about-orb-dot"></span>
+                <span class="about-avatar"></span>
+            </div>
+        </section>
+
+        <section class="home-shell about-section" aria-labelledby="about-work-title">
+            <div class="section-heading">
+                <span class="section-line" aria-hidden="true"></span>
+                <h2 id="about-work-title" data-i18n="about.workTitle">Mình làm gì</h2>
+            </div>
+            <div class="about-card-grid">
+                <article class="about-info-card">
+                    <span class="about-card-icon about-card-icon-yellow" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <circle cx="11" cy="11" r="6"></circle>
+                            <path d="m16 16 4 4"></path>
+                        </svg>
+                    </span>
+                    <h3 data-i18n="about.workLearnTitle">Tìm tòi cái mới</h3>
+                    <p data-i18n="about.workLearnCopy">Thấy công cụ hay, kỹ thuật lạ là phải thử, và thử xong thì viết lại.</p>
+                </article>
+                <article class="about-info-card">
+                    <span class="about-card-icon about-card-icon-soft" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M5 6h14v10H8l-3 3Z"></path>
+                        </svg>
+                    </span>
+                    <h3 data-i18n="about.workShareTitle">Chia sẻ để cùng học</h3>
+                    <p data-i18n="about.workShareCopy">Viết sao cho người mới đọc hiểu, người cũ đọc vẫn thấy có ích.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="home-shell about-split">
+            <div class="about-section">
+                <div class="section-heading">
+                    <span class="section-line" aria-hidden="true"></span>
+                    <h2 data-i18n="about.topicsTitle">Blog này viết về</h2>
+                </div>
+                <div class="about-topic-list" aria-label="Chủ đề blog" data-i18n-aria-label="about.topicsLabel">
+                    <span><i class="topic-dot topic-green" aria-hidden="true"></i><span data-i18n="about.topicAutomation">Automation</span></span>
+                    <span><i class="topic-dot topic-blue" aria-hidden="true"></i><span data-i18n="about.topicPipeline">CI Pipeline</span></span>
+                    <span><i class="topic-dot topic-pink" aria-hidden="true"></i><span data-i18n="about.topicAgent">AI Agent</span></span>
+                    <span><i class="topic-dot topic-orange" aria-hidden="true"></i><span data-i18n="about.topicSharing">Chia Sẻ</span></span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="home-shell about-contact" aria-labelledby="about-contact-title">
+            <div class="about-contact-copy">
+                <h2 id="about-contact-title" data-i18n="about.contactTitle">Đọc xong thấy chỗ nào chưa ổn? Mình rất muốn nghe.</h2>
+                <p data-i18n="about.contactCopy">Góp ý, hỏi thêm, hay chỉ đơn giản là chào nhau, cứ mạnh dạn gửi email. Mình đọc hết và sẽ trả lời.</p>
+                <a class="about-mail-pill" href="mailto:namhuynhvo@gmail.com">
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                        <path d="M4 6h16v12H4Z"></path>
+                        <path d="m4 7 8 6 8-6"></path>
+                    </svg>
+                    namhuynhvo@gmail.com
+                </a>
+                <nav class="about-socials" aria-label="Liên kết cá nhân" data-i18n-aria-label="about.socialLabel">
+                    <a href="https://www.linkedin.com/in/namhuynhvo/">LinkedIn</a>
+                    <a href="https://github.com/namhuynhvo">GitHub</a>
+                </nav>
+            </div>
+            <span class="about-contact-shape" aria-hidden="true"></span>
+        </section>
+    </main>
+
+    <footer class="footer home-footer about-footer">
+        <div class="home-shell footer-inner">
+            <p>&copy; 2026 Nam V.</p>
+            <nav aria-label="Liên kết phụ" data-i18n-aria-label="footer.label">
+                <a href="https://www.linkedin.com/in/namhuynhvo/">LinkedIn</a>
+                <a href="https://github.com/namhuynhvo">GitHub</a>
+            </nav>
         </div>
     </footer>
 
-    <script src="https://namhuynhvo.github.io/js/jquery-1.11.3.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-    <script src="https://namhuynhvo.github.io/js/jquery.fitvids.js"></script>
-    <script src="https://namhuynhvo.github.io/js/scripts.js"></script>
+    <script>
+        (function () {
+            var dictionary = {
+                vi: {
+                    "meta.title": "Giới thiệu - Nam V.",
+                    "brand.home": "Trang chủ Nam V.",
+                    "nav.label": "Điều hướng chính",
+                    "nav.options": "Tùy chọn hiển thị",
+                    "nav.posts": "Bài viết",
+                    "nav.about": "Giới thiệu",
+                    "about.kicker": "Xin chào, mình là Nam",
+                    "about.title": "Mình viết công cụ để <mark>bắt lỗi</mark> trước khi người dùng kịp gặp.",
+                    "about.intro": "Mình là SDET (Software Development Engineer in Test). Blog này là nơi mình ghi lại những gì học được trên đường làm nghề: có cái đúng, có cái sai, và có những thứ hay ho tình cờ tìm ra.",
+                    "about.readBlog": "Đọc blog",
+                    "about.emailMe": "Gửi email cho mình",
+                    "about.workTitle": "Mình làm gì",
+                    "about.workLearnTitle": "Tìm tòi cái mới",
+                    "about.workLearnCopy": "Thấy công cụ hay, kỹ thuật lạ là phải thử, và thử xong thì viết lại.",
+                    "about.workShareTitle": "Chia sẻ để cùng học",
+                    "about.workShareCopy": "Viết sao cho người mới đọc hiểu, người cũ đọc vẫn thấy có ích.",
+                    "about.topicsTitle": "Blog này viết về",
+                    "about.topicsLabel": "Chủ đề blog",
+                    "about.topicAutomation": "Automation",
+                    "about.topicPipeline": "CI Pipeline",
+                    "about.topicAgent": "AI Agent",
+                    "about.topicSharing": "Chia Sẻ",
+                    "about.contactTitle": "Đọc xong thấy chỗ nào chưa ổn? Mình rất muốn nghe.",
+                    "about.contactCopy": "Góp ý, hỏi thêm, hay chỉ đơn giản là chào nhau, cứ mạnh dạn gửi email. Mình đọc hết và sẽ trả lời.",
+                    "about.socialLabel": "Liên kết cá nhân",
+                    "footer.label": "Liên kết phụ",
+                    "language.group": "Ngôn ngữ",
+                    "theme.light": "Sáng",
+                    "theme.dark": "Tối",
+                    "theme.group": "Giao diện",
+                    "theme.toLight": "Chuyển sang giao diện sáng",
+                    "theme.toDark": "Chuyển sang giao diện tối"
+                },
+                en: {
+                    "meta.title": "About - Nam V.",
+                    "brand.home": "Nam V. home",
+                    "nav.label": "Main navigation",
+                    "nav.options": "Display options",
+                    "nav.posts": "Posts",
+                    "nav.about": "About",
+                    "about.kicker": "Hello, I am Nam",
+                    "about.title": "I build tools to <mark>catch bugs</mark> before users run into them.",
+                    "about.intro": "I am a Software Development Engineer in Test (SDET). This blog is where I keep notes from the road: things that worked, things that did not, and useful ideas found along the way.",
+                    "about.readBlog": "Read blog",
+                    "about.emailMe": "Email me",
+                    "about.workTitle": "What I do",
+                    "about.workLearnTitle": "Explore new things",
+                    "about.workLearnCopy": "When a tool or technique looks useful, I try it, then write down what I learned.",
+                    "about.workShareTitle": "Share to learn together",
+                    "about.workShareCopy": "I write so beginners can follow along and experienced readers still find something useful.",
+                    "about.topicsTitle": "This blog covers",
+                    "about.topicsLabel": "Blog topics",
+                    "about.topicAutomation": "Automation",
+                    "about.topicPipeline": "CI Pipeline",
+                    "about.topicAgent": "AI Agent",
+                    "about.topicSharing": "Sharing",
+                    "about.contactTitle": "Found something unclear? I would love to hear it.",
+                    "about.contactCopy": "Send feedback, ask a question, or just say hello. I read everything and will reply.",
+                    "about.socialLabel": "Personal links",
+                    "footer.label": "Footer links",
+                    "language.group": "Language",
+                    "theme.light": "Light",
+                    "theme.dark": "Dark",
+                    "theme.group": "Theme",
+                    "theme.toLight": "Switch to light mode",
+                    "theme.toDark": "Switch to dark mode"
+                }
+            };
+
+            var languageButtons = document.querySelectorAll("[data-language-option]");
+            var themeButtons = document.querySelectorAll("[data-theme-option]");
+            var lang = getStoredValue("homeLanguage") || "vi";
+            var theme = getStoredValue("homeTheme") || "light";
+            lang = dictionary[lang] ? lang : "vi";
+            theme = theme === "dark" ? "dark" : "light";
+
+            function getStoredValue(key) {
+                try {
+                    return localStorage.getItem(key);
+                } catch (error) {
+                    return null;
+                }
+            }
+
+            function setStoredValue(key, value) {
+                try {
+                    localStorage.setItem(key, value);
+                } catch (error) {
+                    return;
+                }
+            }
+
+            function text(key) {
+                return dictionary[lang][key] || dictionary.vi[key] || "";
+            }
+
+            function applyLanguage() {
+                document.documentElement.lang = lang;
+                document.title = text("meta.title");
+
+                document.querySelectorAll("[data-i18n]").forEach(function (element) {
+                    element.textContent = text(element.getAttribute("data-i18n"));
+                });
+
+                document.querySelectorAll("[data-i18n-html]").forEach(function (element) {
+                    element.innerHTML = text(element.getAttribute("data-i18n-html"));
+                });
+
+                document.querySelectorAll("[data-i18n-aria-label]").forEach(function (element) {
+                    element.setAttribute("aria-label", text(element.getAttribute("data-i18n-aria-label")));
+                });
+
+                updateLanguageButtons();
+                updateThemeButtons();
+            }
+
+            function applyTheme() {
+                document.body.classList.toggle("theme-dark", theme === "dark");
+                updateThemeButtons();
+            }
+
+            function updateLanguageButtons() {
+                languageButtons.forEach(function (button) {
+                    var isActive = button.getAttribute("data-language-option") === lang;
+                    button.classList.toggle("is-active", isActive);
+                    button.setAttribute("aria-pressed", isActive ? "true" : "false");
+                });
+            }
+
+            function updateThemeButtons() {
+                themeButtons.forEach(function (button) {
+                    var option = button.getAttribute("data-theme-option");
+                    var isActive = option === theme;
+                    button.classList.toggle("is-active", isActive);
+                    button.setAttribute("aria-pressed", isActive ? "true" : "false");
+                    button.setAttribute("aria-label", text(option === "light" ? "theme.toLight" : "theme.toDark"));
+                });
+            }
+
+            languageButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    lang = button.getAttribute("data-language-option");
+                    setStoredValue("homeLanguage", lang);
+                    applyLanguage();
+                });
+            });
+
+            themeButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    theme = button.getAttribute("data-theme-option");
+                    setStoredValue("homeTheme", theme);
+                    applyTheme();
+                });
+            });
+
+            applyLanguage();
+            applyTheme();
+        })();
+    </script>
 </body>
 
 </html>
