@@ -1495,14 +1495,39 @@
 
     .nav-links {
         width: 100%;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: nowrap;
         overflow-x: auto;
         padding-bottom: 4px;
+        gap: 6px;
     }
 
     .nav-actions {
         margin-left: 0;
+        gap: 8px;
+        flex: 0 0 auto;
+    }
+
+    .segmented-control {
+        min-height: 40px;
+        padding: 4px;
+    }
+
+    .segment-button {
+        min-width: 42px;
+        height: 32px;
+        padding: 0 8px;
+        font-size: 12px;
+    }
+
+    .icon-segment {
+        min-width: 32px;
+        width: 32px;
+    }
+
+    .icon-segment svg {
+        width: 16px;
+        height: 16px;
     }
 
     .brand-name {
@@ -1581,8 +1606,26 @@
     }
 
     .nav-link {
-        padding-right: 13px;
-        padding-left: 13px;
+        min-height: 38px;
+        padding-right: 9px;
+        padding-left: 9px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    .nav-actions {
+        gap: 6px;
+    }
+
+    .segment-button {
+        min-width: 36px;
+        height: 30px;
+        padding: 0 6px;
+    }
+
+    .icon-segment {
+        min-width: 28px;
+        width: 28px;
     }
 
     .hero {
@@ -2652,8 +2695,11 @@
 
     .post-page .post-nav-links {
         width: 100%;
-        justify-content: flex-start;
-        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 6px;
+        overflow-x: auto;
+        padding-bottom: 4px;
     }
 
     .post-page .post-header h1 {
