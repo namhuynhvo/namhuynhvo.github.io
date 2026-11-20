@@ -484,8 +484,7 @@ $ npm i macaca-ios -g</code></pre>
         "3-sach-cho-automation-tester": "books",
         "4-5-ly-do-automation-chua-thay-the-hoan-toan-manual": "automation",
         "5-hieu-gi-ve-white-box": "whitebox",
-        "6-macaca-giai-phap-cho-mobile": "macaca",
-        "7-devops-va-tuong-lai-cua-testing": "devops"
+        "6-macaca-giai-phap-cho-mobile": "macaca"
     };
 
     var postOrder = [
@@ -518,11 +517,6 @@ $ npm i macaca-ios -g</code></pre>
             key: "macaca",
             slug: "6-macaca-giai-phap-cho-mobile",
             titleKey: "post.macaca.title"
-        },
-        {
-            key: "devops",
-            slug: "7-devops-va-tuong-lai-cua-testing",
-            titleKey: "post.devops.title"
         }
     ];
 
