@@ -11,7 +11,7 @@
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nam V.</title>
-    <link rel="stylesheet" href="../../dist/styles.css?v=20261121-1">
+    <link rel="stylesheet" href="../../dist/styles.css?v=20261121-3">
     <link href="../../index.xml" rel="alternate" type="application/rss+xml">
 </head>
 
@@ -217,9 +217,9 @@
 
             var languageButtons = document.querySelectorAll("[data-language-option]");
             var themeButtons = document.querySelectorAll("[data-theme-option]");
-            var lang = getStoredValue("homeLanguage") || "vi";
+            var lang = getStoredValue("homeLanguage") || "en";
             var theme = getStoredValue("homeTheme") || "light";
-            lang = dictionary[lang] ? lang : "vi";
+            lang = dictionary[lang] ? lang : "en";
             theme = theme === "dark" ? "dark" : "light";
 
             function getStoredValue(key) {

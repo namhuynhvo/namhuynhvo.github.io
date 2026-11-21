@@ -11,7 +11,7 @@
     <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nam V.</title>
-    <link rel="stylesheet" href="dist/styles.css?v=20261121-1">
+    <link rel="stylesheet" href="dist/styles.css?v=20261121-3">
     <link href="index.xml" rel="alternate" type="application/rss+xml">
 </head>
 
@@ -116,11 +116,11 @@
                 </li>
 
                 <li class="article-card" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-                    <a href="post/3-sach-cho-automation-tester/" itemprop="url">
+                    <a href="post/3-sach-cho-automation-engineer/" itemprop="url">
                         <div class="article-meta">
                             <time datetime="2018-09-17">17/09/2018</time>
                         </div>
-                        <h3 itemprop="name" data-i18n="post.books.title">Sách cho automation tester</h3>
+                        <h3 itemprop="name" data-i18n="post.books.title">Sách cho automation engineer</h3>
                         <p data-i18n="post.books.summary">Một danh sách tài liệu nền tảng cho người làm automation, từ Selenium, Appium, API testing đến DevOps.</p>
                         <span class="read-more" data-i18n="post.readMore">Đọc tiếp</span>
                     </a>
@@ -196,7 +196,7 @@
                     "post.whitebox.summary": "Một cách giải thích gọn về white-box testing, các kỹ thuật thường gặp và khi nào nên đưa nó vào chiến lược kiểm thử.",
                     "post.automation.title": "5 lý do automation chưa thay thế hoàn toàn manual",
                     "post.automation.summary": "Automation rất hữu ích, nhưng vẫn có những vùng cần tư duy quan sát, khám phá và đánh giá của con người.",
-                    "post.books.title": "Sách cho automation tester",
+                    "post.books.title": "Sách cho automation engineer",
                     "post.books.summary": "Một danh sách tài liệu nền tảng cho người làm automation, từ Selenium, Appium, API testing đến DevOps.",
                     "post.zrtp.title": "Giao thức ZRTP",
                     "post.zrtp.summary": "Tổng hợp các khái niệm, định dạng bản tin và cách ZRTP trao đổi khóa để bảo mật cuộc gọi.",
@@ -231,7 +231,7 @@
                     "post.whitebox.summary": "A concise explanation of white-box testing, common techniques, and when to include it in a test strategy.",
                     "post.automation.title": "5 reasons automation has not fully replaced manual testing",
                     "post.automation.summary": "Automation is useful, but some areas still need human observation, exploration, and judgment.",
-                    "post.books.title": "Books for automation testers",
+                    "post.books.title": "Books for automation engineers",
                     "post.books.summary": "A foundational reading list for automation testers, from Selenium and Appium to API testing and DevOps.",
                     "post.zrtp.title": "The ZRTP protocol",
                     "post.zrtp.summary": "A summary of concepts, message formats, and how ZRTP exchanges keys to secure calls.",
@@ -255,9 +255,9 @@
 
             var languageButtons = document.querySelectorAll("[data-language-option]");
             var themeButtons = document.querySelectorAll("[data-theme-option]");
-            var lang = getStoredValue("homeLanguage") || "vi";
+            var lang = getStoredValue("homeLanguage") || "en";
             var theme = getStoredValue("homeTheme") || "light";
-            lang = dictionary[lang] ? lang : "vi";
+            lang = dictionary[lang] ? lang : "en";
             theme = theme === "dark" ? "dark" : "light";
 
             function getStoredValue(key) {

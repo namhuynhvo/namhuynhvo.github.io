@@ -29,7 +29,7 @@
             "post.whitebox.date": "Đăng ngày 17/02/2020",
             "post.automation.title": "5 lý do automation chưa thay thế hoàn toàn manual",
             "post.automation.date": "Đăng ngày 01/12/2019",
-            "post.books.title": "Sách cho automation tester",
+            "post.books.title": "Sách cho automation engineer",
             "post.books.date": "Đăng ngày 17/09/2018",
             "post.zrtp.title": "Giao thức ZRTP",
             "post.zrtp.date": "Đăng ngày 03/09/2018",
@@ -65,7 +65,7 @@
             "post.whitebox.date": "Published Feb 17, 2020",
             "post.automation.title": "5 reasons automation has not fully replaced manual testing",
             "post.automation.date": "Published Dec 01, 2019",
-            "post.books.title": "Books for automation testers",
+            "post.books.title": "Books for automation engineers",
             "post.books.date": "Published Sep 17, 2018",
             "post.zrtp.title": "The ZRTP protocol",
             "post.zrtp.date": "Published Sep 03, 2018",
@@ -173,7 +173,7 @@ Visa
 http://www.quisuc.biz</code></pre>
 
                     <p>JFairy is lightweight and easy to use. These generators are useful for creating test data for automated test scenarios.</p>
-                    <p style="text-align: right;"><em>huynh nam by <a href="http://www.testautomationguru.com/selenium-webdriver-how-to-generate-test-data-using-jfairy" target="_new" rel="nofollow">Guru</a></em></p>
+                    <p style="text-align: right;"><em>Source: <a href="http://www.testautomationguru.com/selenium-webdriver-how-to-generate-test-data-using-jfairy" target="_new" rel="nofollow">Guru</a></em></p>
         `,
         zrtp: `
                     <h1 class="post-color">Some concepts</h1>
@@ -274,7 +274,7 @@ http://www.quisuc.biz</code></pre>
                         <li><em>MiTM: Man In The Middle Attack</em></li>
                     </ul>
 
-                    <p style="text-align: right;"><em>huynh nam by <a href="https://www.rfc-editor.org/info/rfc6189" target="_new" rel="nofollow">P. Zimmermann, A. Johnston, Ed., J. Callas</a></em></p>
+                    <p style="text-align: right;"><em>Source: <a href="https://www.rfc-editor.org/info/rfc6189" target="_new" rel="nofollow">P. Zimmermann, A. Johnston, Ed., J. Callas</a></em></p>
         `,
         books: `
                     <p>Over several years working at software companies, I have read a few books about automation testing. I hope this list gives you a few useful references.</p>
@@ -330,7 +330,6 @@ http://www.quisuc.biz</code></pre>
                         </figure>
                     </div>
 
-                    <p style="text-align: right;"><em>by <a href="https://namhuynhvo.github.io/" target="_new" rel="nofollow">huynh nam</a></em></p>
         `,
         automation: `
                     <p>In this post, I want to discuss issues I have encountered while building an automation team. These are personal observations about why automation testing still cannot fully replace manual testing.</p>
@@ -351,7 +350,6 @@ http://www.quisuc.biz</code></pre>
                     <p>Automation results can tell us that something failed, but not always why it failed. A failing script may only say that an XPath was not found or that it could not interact with an element. We still need manual investigation to identify the real cause, which can take more time than testing manually from the start.</p>
 
                     <p>In my opinion, automation testing improves accuracy, coverage, scale, and speed. But it cannot always provide the full answer by itself, for the reasons above.</p>
-                    <p style="text-align: right;"><em>by <a href="https://namhuynhvo.github.io/" target="_new" rel="nofollow">huynh nam</a></em></p>
         `,
         whitebox: `
                     <p>In this post, I want to talk about one software testing method: white-box testing. What is it, and how can we apply it?</p>
@@ -379,7 +377,6 @@ http://www.quisuc.biz</code></pre>
                     <p>White-box testing checks the internal behavior of the software. It helps uncover defects in core logic without relying only on black-box techniques.</p>
 
                     <p>I do not want to argue that one technique is always better than the other. Each technique has a different purpose. Ignoring one of them reduces overall test coverage and increases the chance of missing bugs before the product reaches users.</p>
-                    <p style="text-align: right;"><em>by <a href="https://namhuynhvo.github.io/" target="_new" rel="nofollow">huynh nam</a></em></p>
         `,
         macaca: `
                     <p>Locating elements on mobile with Appium Desktop can take a lot of time, and the result is not always accurate. While working on mobile automation, I tried Macaca. In my opinion, Macaca is a useful tool for inspecting elements on Android and iOS.</p>
@@ -449,7 +446,6 @@ $ npm i macaca-ios -g</code></pre>
                     <pre class="line-numbers language-java code-toolbar"><code class="language-java">app-inspector -u YOUR-UDID --verbose</code></pre>
 
                     <p>That is it. I hope this helps anyone building mobile automation for their team.</p>
-                    <p style="text-align: right;"><em>by <a href="https://namhuynhvo.github.io/" target="_new" rel="nofollow">huynh nam</a></em></p>
         `,
         devops: `
                     <p>Software development today is a long-running process. It started with the waterfall model, where most development happened before testing began. Agile later changed how teams build software. A project starts from an initial idea passed to developers, and when development is complete, the product is handed to operations teams for final delivery to users.</p>
@@ -507,14 +503,13 @@ $ npm i macaca-ios -g</code></pre>
                     <img height="300px" width="600px" class="post-content" src="https://namhuynhvo.github.io/images/post/6/macaca-3.png" />
 
                     <p>That is it. I hope this helps anyone building mobile automation for their team.</p>
-                    <p style="text-align: right;"><em>by <a href="https://namhuynhvo.github.io/" target="_new" rel="nofollow">huynh nam</a></em></p>
         `
     };
 
     var postBySlug = {
         "1-tao-du-lieu-voi-jfairy": "jfairy",
         "2-giao-thuc-zrtp": "zrtp",
-        "3-sach-cho-automation-tester": "books",
+        "3-sach-cho-automation-engineer": "books",
         "4-5-ly-do-automation-chua-thay-the-hoan-toan-manual": "automation",
         "5-hieu-gi-ve-white-box": "whitebox",
         "6-macaca-giai-phap-cho-mobile": "macaca"
@@ -533,7 +528,7 @@ $ npm i macaca-ios -g</code></pre>
         },
         {
             key: "books",
-            slug: "3-sach-cho-automation-tester",
+            slug: "3-sach-cho-automation-engineer",
             titleKey: "post.books.title"
         },
         {
@@ -553,8 +548,8 @@ $ npm i macaca-ios -g</code></pre>
         }
     ];
 
-    var language = getStoredValue("homeLanguage") || "vi";
-    language = dictionary[language] ? language : "vi";
+    var language = getStoredValue("homeLanguage") || "en";
+    language = dictionary[language] ? language : "en";
     var theme = getStoredValue("homeTheme") || "light";
     theme = theme === "dark" ? "dark" : "light";
     var postContent = document.querySelector(".post-content[itemprop='articleBody']");
