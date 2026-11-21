@@ -279,23 +279,56 @@ http://www.quisuc.biz</code></pre>
         books: `
                     <p>Over several years working at software companies, I have read a few books about automation testing. I hope this list gives you a few useful references.</p>
 
-                    <ul><li>Selenium 1.0 Testing Tools: Beginner's Guide - <em style="color: #ff0000">David Burns (ISBN-10:1849510261)</em></li></ul>
-                    <img height="300px" width="200px" class="post-content" src="https://namhuynhvo.github.io/images/post/3/selenium-testing-tools-beginners-guide.png" />
-
-                    <ul><li>Selenium Design Patterns and Best Practices - <em style="color: #ff0000">Dima Kovalenko (ISBN-10:1783982705)</em></li></ul>
-                    <img height="300px" width="200px" class="post-content" src="https://namhuynhvo.github.io/images/post/3/selenium-design-patterns-and-best-practices.png" />
-
-                    <ul><li>Mastering SoapUI - <em style="color: #ff0000">Pranai Nandan (ISBN-10:178398080X)</em></li></ul>
-                    <img height="300px" width="200px" class="post-content" src="https://namhuynhvo.github.io/images/post/3/mastering-soapui.png" />
-
-                    <ul><li>Practical DevOps - <em style="color: #ff0000">Joakim Verona (ISBN-10:1785882872)</em></li></ul>
-                    <img height="300px" width="200px" class="post-content" src="https://namhuynhvo.github.io/images/post/3/practical-devops.png" />
-
-                    <ul><li>Mastering Selenium WebDriver - <em style="color: #ff0000">Mark Collin (ISBN-10:1784394351)</em></li></ul>
-                    <img height="300px" width="200px" class="post-content" src="https://namhuynhvo.github.io/images/post/3/mastering-selenium-webdriver.png" />
-
-                    <ul><li>Mastering Mobile Test Automation - <em style="color: #ff0000">Feroz Pearl Louis, Gaurav Gupta (ISBN-10:1782175423)</em></li></ul>
-                    <img height="300px" width="200px" class="post-content" src="https://namhuynhvo.github.io/images/post/3/mastering-mobile-test-automation.png" />
+                    <div class="book-grid">
+                        <figure class="book-card">
+                            <img src="https://namhuynhvo.github.io/images/post/3/selenium-testing-tools-beginners-guide.png" alt="Cover of Selenium 1.0 Testing Tools: Beginner's Guide" loading="lazy" />
+                            <figcaption>
+                                <span class="book-title">Selenium 1.0 Testing Tools: Beginner's Guide</span>
+                                <span class="book-author">David Burns</span>
+                                <span class="book-isbn">ISBN-10: 1849510261</span>
+                            </figcaption>
+                        </figure>
+                        <figure class="book-card">
+                            <img src="https://namhuynhvo.github.io/images/post/3/selenium-design-patterns-and-best-practices.png" alt="Cover of Selenium Design Patterns and Best Practices" loading="lazy" />
+                            <figcaption>
+                                <span class="book-title">Selenium Design Patterns and Best Practices</span>
+                                <span class="book-author">Dima Kovalenko</span>
+                                <span class="book-isbn">ISBN-10: 1783982705</span>
+                            </figcaption>
+                        </figure>
+                        <figure class="book-card">
+                            <img src="https://namhuynhvo.github.io/images/post/3/mastering-soapui.png" alt="Cover of Mastering SoapUI" loading="lazy" />
+                            <figcaption>
+                                <span class="book-title">Mastering SoapUI</span>
+                                <span class="book-author">Pranai Nandan</span>
+                                <span class="book-isbn">ISBN-10: 178398080X</span>
+                            </figcaption>
+                        </figure>
+                        <figure class="book-card">
+                            <img src="https://namhuynhvo.github.io/images/post/3/practical-devops.png" alt="Cover of Practical DevOps" loading="lazy" />
+                            <figcaption>
+                                <span class="book-title">Practical DevOps</span>
+                                <span class="book-author">Joakim Verona</span>
+                                <span class="book-isbn">ISBN-10: 1785882872</span>
+                            </figcaption>
+                        </figure>
+                        <figure class="book-card">
+                            <img src="https://namhuynhvo.github.io/images/post/3/mastering-selenium-webdriver.png" alt="Cover of Mastering Selenium WebDriver" loading="lazy" />
+                            <figcaption>
+                                <span class="book-title">Mastering Selenium WebDriver</span>
+                                <span class="book-author">Mark Collin</span>
+                                <span class="book-isbn">ISBN-10: 1784394351</span>
+                            </figcaption>
+                        </figure>
+                        <figure class="book-card">
+                            <img src="https://namhuynhvo.github.io/images/post/3/mastering-mobile-test-automation.png" alt="Cover of Mastering Mobile Test Automation" loading="lazy" />
+                            <figcaption>
+                                <span class="book-title">Mastering Mobile Test Automation</span>
+                                <span class="book-author">Feroz Pearl Louis, Gaurav Gupta</span>
+                                <span class="book-isbn">ISBN-10: 1782175423</span>
+                            </figcaption>
+                        </figure>
+                    </div>
 
                     <p style="text-align: right;"><em>by <a href="https://namhuynhvo.github.io/" target="_new" rel="nofollow">huynh nam</a></em></p>
         `,
@@ -572,10 +605,7 @@ $ npm i macaca-ios -g</code></pre>
             element.setAttribute("placeholder", text(element.getAttribute("data-i18n-placeholder")));
         });
 
-        var postTitle = document.querySelector(".post-header h1");
-        if (postTitle && postTitle.textContent.trim()) {
-            document.title = postTitle.textContent.trim() + " - Nam V.";
-        }
+        document.title = "Nam V.";
 
         updateLanguageButtons();
         updateThemeButtons();
